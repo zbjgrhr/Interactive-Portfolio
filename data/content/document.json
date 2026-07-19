@@ -1,0 +1,699 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-15T15:12:44.140Z",
+  "localeDefaults": {
+    "en": true,
+    "zh": true
+  },
+  "projects": [
+    {
+      "id": "pixel-seed",
+      "title": "Pixel Seed",
+      "oneLiner": "An AI platform that turns a prompt into a playable pixel world.",
+      "context": "Players wanted game creation without art pipelines. Pixel Seed closes the gap between imagination and a runnable 2D stage.",
+      "problem": "Generating assets is easy; loading them into coherent, playable platformer logic is not.",
+      "role": "Product design, frontend, game logic, generation flow, and deployment.",
+      "process": [
+        "Prompt intake and theme framing",
+        "AI pixel character and background generation",
+        "Asset packaging into a Phaser-ready stage",
+        "Playable preview and iteration loop"
+      ],
+      "keyDecisions": [
+        "Treat generation as a pipeline, not a single API call",
+        "Keep the playable loop first-class so output is never only an image",
+        "Ship with Next.js + TypeScript for product and game unity"
+      ],
+      "technology": [
+        "Next.js",
+        "TypeScript",
+        "AI image generation",
+        "2D platformer runtime"
+      ],
+      "challenges": [
+        "Inconsistent asset dimensions and palettes",
+        "Mapping freeform prompts into constrained game templates",
+        "Keeping generation latency tolerable for interactive use"
+      ],
+      "outcome": "A working platform where a theme becomes sprites, a stage, and a short playable session.",
+      "learned": [
+        "Creative AI products need strong constraints to feel intentional",
+        "Playability is the proof, not the render"
+      ],
+      "coverSrc": "/portfolio/pixel-seed-hero.webp",
+      "gallery": [
+        "/portfolio/pixel-seed-hero.webp"
+      ]
+    },
+    {
+      "id": "browser-tools",
+      "title": "Browser Extension Tools",
+      "oneLiner": "Turning repeated web actions into intentional workflows.",
+      "context": "Browser work often means noise: duplicated tabs, scattered copy, and manual cleanup.",
+      "problem": "Useful signals hide inside repetitive page patterns that tools rarely restructure.",
+      "role": "Interaction design and extension tooling for extraction, folding, and automation paths.",
+      "process": [
+        "Observe repeated user friction on the page",
+        "Design activation points that feel like clearing noise",
+        "Extract structured signal from cluttered DOM",
+        "Open automation paths without hijacking the browser"
+      ],
+      "keyDecisions": [
+        "Prefer visible, reversible transformations over silent scripts",
+        "Model workflows as sequences the user can understand"
+      ],
+      "technology": [
+        "Browser extensions",
+        "DOM automation",
+        "TypeScript"
+      ],
+      "challenges": [
+        "Fragile page structures across sites",
+        "Permission and trust boundaries"
+      ],
+      "outcome": "Tools that collapse noise and surface the useful signal.",
+      "learned": [
+        "Efficiency is a design problem before it is a scraping problem"
+      ],
+      "coverSrc": "/portfolio/web-study-workspace.webp",
+      "gallery": [
+        "/portfolio/web-study-workspace.webp"
+      ]
+    },
+    {
+      "id": "emotion-chatbot",
+      "title": "Emotion-Cognitive Chatbot",
+      "oneLiner": "A dialogue system that knows when to respond — and when to leave space.",
+      "context": "Supportive conversation products often over-correct emotion instead of holding it.",
+      "problem": "Emotion is not a bug to fix. Systems need context, boundaries, and safety — not only model calls.",
+      "role": "Conversation UX, cognitive framing, and product boundary design.",
+      "process": [
+        "Map emotional paths without scoring them as wins/losses",
+        "Design response timing and silence as first-class behaviors",
+        "Define safety rails and escalation edges"
+      ],
+      "keyDecisions": [
+        "Do not gamify negative emotion as something to defeat",
+        "Treat listening as an interaction mode"
+      ],
+      "technology": [
+        "Conversational AI",
+        "Product UX",
+        "Safety guidelines"
+      ],
+      "challenges": [
+        "Avoiding false certainty in emotional interpretation",
+        "Keeping warmth without over-promising clinical care"
+      ],
+      "outcome": "A calmer dialogue surface oriented around presence and boundaries.",
+      "learned": [
+        "Not every signal needs to be corrected",
+        "Thoughtful systems leave space"
+      ],
+      "coverSrc": "/portfolio/innerseed-hero.webp",
+      "gallery": [
+        "/portfolio/innerseed-hero.webp"
+      ]
+    },
+    {
+      "id": "multimodal-research",
+      "title": "Multimodal AI Research",
+      "oneLiner": "EEG + eye-tracking signals turned into interpretable structure.",
+      "context": "At Lanzhou University, multimodal research required careful handling of noisy biological signals.",
+      "problem": "Raw signals rarely explain themselves without disciplined questions.",
+      "role": "Data cleaning, feature extraction and selection, tree-model training and tuning, evaluation, visualization, and paper discussion.",
+      "process": [
+        "Data organization and cleaning",
+        "Feature extraction and selection",
+        "Tree model training and parameter tuning",
+        "Evaluation and visualization",
+        "Literature reading and research discussion"
+      ],
+      "keyDecisions": [
+        "Prioritize interpretable features before model complexity",
+        "Treat evaluation as a narrative of what the signal can claim"
+      ],
+      "technology": [
+        "EEG",
+        "Eye-tracking",
+        "Feature engineering",
+        "Tree models"
+      ],
+      "challenges": [
+        "Noise and alignment across modalities",
+        "Avoiding overfit stories about weak signals"
+      ],
+      "outcome": "A research practice of moving from chaos to explainable structure.",
+      "learned": [
+        "Patterns emerge through careful questions",
+        "Look beyond the visible interface"
+      ],
+      "coverSrc": "/portfolio/eeg-processing.webp",
+      "gallery": [
+        "/portfolio/eeg-processing.webp"
+      ]
+    }
+  ],
+  "frames": [
+    {
+      "id": "frame-pixel-1",
+      "name": "Pixel Seed — Title",
+      "chapter": "movement-i",
+      "projectId": "pixel-seed",
+      "revealLevel": 1,
+      "trigger": "reveal",
+      "startTime": 17,
+      "endTime": 37,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-rivifym",
+          "type": "frame",
+          "name": "Frame",
+          "transform": {
+            "x": 120,
+            "y": 60,
+            "w": 320,
+            "h": 100,
+            "zIndex": 0,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "fill": "rgba(26,16,48,0.75)",
+          "stroke": "#5eead4",
+          "strokeWidth": 1,
+          "radius": 4
+        },
+        {
+          "id": "layer-lj236r4",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 140,
+            "y": 80,
+            "w": 280,
+            "h": 36,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "PIXEL SEED",
+          "textStyle": {
+            "color": "#e879a9",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        },
+        {
+          "id": "layer-776mqm9",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 140,
+            "y": 115,
+            "w": 280,
+            "h": 30,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "from prompt to playable stage",
+          "textStyle": {
+            "color": "#5eead4",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-pixel-2",
+      "name": "Pixel Seed — Draft",
+      "chapter": "movement-i",
+      "projectId": "pixel-seed",
+      "revealLevel": 2,
+      "trigger": "reveal",
+      "startTime": 20.5,
+      "endTime": 37,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-3c7bupm",
+          "type": "frame",
+          "name": "Frame",
+          "transform": {
+            "x": 430,
+            "y": 30,
+            "w": 400,
+            "h": 250,
+            "zIndex": 0,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "fill": "rgba(26,16,48,0.75)",
+          "stroke": "#5eead4",
+          "strokeWidth": 1,
+          "radius": 4
+        },
+        {
+          "id": "layer-g77fcvn",
+          "type": "image",
+          "name": "Image",
+          "transform": {
+            "x": 450,
+            "y": 50,
+            "w": 360,
+            "h": 185,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/pixel-seed-hero.webp",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        },
+        {
+          "id": "layer-jylylf9",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 450,
+            "y": 242,
+            "w": 360,
+            "h": 24,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "prompt-to-world interface",
+          "textStyle": {
+            "color": "#8fa0b8",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-pixel-3",
+      "name": "Pixel Seed — Pipeline",
+      "chapter": "movement-i",
+      "projectId": "pixel-seed",
+      "revealLevel": 3,
+      "trigger": "reveal",
+      "startTime": 24.2,
+      "endTime": 37,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-81yw0fk",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 160,
+            "y": 220,
+            "w": 360,
+            "h": 30,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "prompt → assets → stage",
+          "textStyle": {
+            "color": "#5eead4",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-pixel-4",
+      "name": "Pixel Seed — World",
+      "chapter": "movement-i",
+      "projectId": "pixel-seed",
+      "revealLevel": 4,
+      "trigger": "reveal",
+      "startTime": 29.5,
+      "endTime": 39,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-gcuk35q",
+          "type": "frame",
+          "name": "Frame",
+          "transform": {
+            "x": 760,
+            "y": 35,
+            "w": 430,
+            "h": 260,
+            "zIndex": 0,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "fill": "rgba(26,16,48,0.75)",
+          "stroke": "#5eead4",
+          "strokeWidth": 1,
+          "radius": 4
+        },
+        {
+          "id": "layer-ibkd9ne",
+          "type": "image",
+          "name": "Image",
+          "transform": {
+            "x": 780,
+            "y": 55,
+            "w": 390,
+            "h": 200,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/pixel-seed-system.webp",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        },
+        {
+          "id": "layer-wy2ij87",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 780,
+            "y": 262,
+            "w": 390,
+            "h": 24,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "playable world system",
+          "textStyle": {
+            "color": "#f5e6a8",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-browser-1",
+      "name": "Browser Tools — Tabs",
+      "chapter": "movement-ii",
+      "projectId": "browser-tools",
+      "revealLevel": 1,
+      "trigger": "reveal",
+      "startTime": 43,
+      "endTime": 58,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-6dt1dab",
+          "type": "image",
+          "name": "Image",
+          "transform": {
+            "x": 100,
+            "y": 50,
+            "w": 260,
+            "h": 150,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/web-study-workspace.webp",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        },
+        {
+          "id": "layer-sjh8pex",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 100,
+            "y": 220,
+            "w": 260,
+            "h": 28,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "tabs → signal",
+          "textStyle": {
+            "color": "#5eead4",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-emotion-1",
+      "name": "Emotion — Space",
+      "chapter": "movement-iii",
+      "projectId": "emotion-chatbot",
+      "revealLevel": 1,
+      "trigger": "reveal",
+      "startTime": 65,
+      "endTime": 80,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-ehmy6xv",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 200,
+            "y": 120,
+            "w": 400,
+            "h": 40,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "Some signals need to be heard.",
+          "textStyle": {
+            "color": "#e879a9",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        },
+        {
+          "id": "layer-puh2bjp",
+          "type": "image",
+          "name": "Image",
+          "transform": {
+            "x": 700,
+            "y": 60,
+            "w": 280,
+            "h": 160,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/innerseed-hero.webp",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        }
+      ]
+    },
+    {
+      "id": "frame-research-1",
+      "name": "Research — Wave",
+      "chapter": "movement-iv",
+      "projectId": "multimodal-research",
+      "revealLevel": 1,
+      "trigger": "reveal",
+      "startTime": 86,
+      "endTime": 101,
+      "canvas": {
+        "width": 1280,
+        "height": 396
+      },
+      "layers": [
+        {
+          "id": "layer-6goa3ro",
+          "type": "image",
+          "name": "Image",
+          "transform": {
+            "x": 160,
+            "y": 40,
+            "w": 320,
+            "h": 180,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/eeg-processing.webp",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        },
+        {
+          "id": "layer-us3mlck",
+          "type": "text",
+          "name": "Text",
+          "transform": {
+            "x": 160,
+            "y": 240,
+            "w": 320,
+            "h": 28,
+            "zIndex": 2,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "text": "raw signals → structure",
+          "textStyle": {
+            "color": "#f5e6a8",
+            "fontSize": 14,
+            "fontWeight": 600,
+            "align": "left",
+            "lineHeight": 1.4,
+            "fontFamily": "Courier New, monospace"
+          }
+        }
+      ]
+    }
+  ],
+  "narratives": {
+    "prologue-1": {
+      "en": "Every project begins with a signal."
+    },
+    "prologue-2": {
+      "en": "Some become systems."
+    },
+    "prologue-3": {
+      "en": "Some become worlds."
+    },
+    "prologue-4": {
+      "en": "I build where intelligence, interaction and imagination meet."
+    },
+    "pixel-1": {
+      "en": "A blank key waits for a prompt."
+    },
+    "pixel-2": {
+      "en": "Form gathers from intention."
+    },
+    "pixel-3": {
+      "en": "A world is not an image — it is a place you can enter."
+    },
+    "pixel-4": {
+      "en": "Pixel Seed: from prompt to playable stage."
+    },
+    "browser-1": {
+      "en": "You cleared the noise."
+    },
+    "browser-2": {
+      "en": "The useful signal was always there."
+    },
+    "browser-3": {
+      "en": "I designed browser tools that turn repeated actions into intentional workflows."
+    },
+    "emotion-1": {
+      "en": "Not every signal needs to be corrected."
+    },
+    "emotion-2": {
+      "en": "Some need to be heard."
+    },
+    "emotion-3": {
+      "en": "A thoughtful system knows when to respond — and when to leave space."
+    },
+    "research-1": {
+      "en": "Raw signals rarely explain themselves."
+    },
+    "research-2": {
+      "en": "Patterns emerge through careful questions."
+    },
+    "research-3": {
+      "en": "Research taught me to look beyond the visible interface."
+    },
+    "coda-1": {
+      "en": "Threads return to the same instrument."
+    },
+    "coda-2": {
+      "en": "If this experience left a signal, let’s continue the conversation."
+    }
+  }
+}
