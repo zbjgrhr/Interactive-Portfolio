@@ -29,6 +29,12 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+preview.*.log
+
+# local verification and delivery artifacts
+/tmp/
+/__zip_verify_windows_*/
+/*.zip
 
 # env files
 .env*.local

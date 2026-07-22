@@ -10,6 +10,29 @@ import { useContentDocument } from "@/hooks/useContentDocument";
 import { resolveProjects } from "@/lib/content/projectsAdapter";
 import { useUiStore } from "@/store/uiStore";
 
+function ResumeDownloadLinks({ locale }: { locale: "en" | "zh" }) {
+  const options = locale === "zh"
+    ? [
+        { ...publicLinks.resumes.zh, label: "中文简历 · PDF" },
+        { ...publicLinks.resumes.en, label: "English CV · DOCX" },
+      ]
+    : [
+        { ...publicLinks.resumes.en, label: "English CV · DOCX" },
+        { ...publicLinks.resumes.zh, label: "中文简历 · PDF" },
+      ];
+
+  return options.map((option) => (
+    <a
+      key={option.href}
+      className="btn-secondary"
+      href={option.href}
+      download={option.filename}
+    >
+      {option.label}
+    </a>
+  ));
+}
+
 export function ExploreView() {
   const locale = useUiStore((state) => state.locale);
   const setMode = useUiStore((state) => state.setMode);
@@ -58,9 +81,7 @@ export function ExploreView() {
             <a className="btn-primary" href="#work">
               {locale === "en" ? "View selected work" : "查看精选作品"}
             </a>
-            <a className="btn-secondary" href={publicLinks.cv} download>
-              {content.explore.downloadCv}
-            </a>
+            <ResumeDownloadLinks locale={locale} />
             <a className="btn-ghost" href={publicLinks.portfolio} target="_blank" rel="noreferrer">
               {locale === "en" ? "Full portfolio ↗" : "完整作品集 ↗"}
             </a>
@@ -268,7 +289,7 @@ export function ExploreView() {
           </Link>
           <a className="btn-primary" href={`mailto:${publicLinks.email}`}>{publicLinks.email}</a>
           <a className="btn-secondary" href={publicLinks.github} target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a className="btn-secondary" href={publicLinks.cv} download>{content.explore.downloadCv}</a>
+          <ResumeDownloadLinks locale={locale} />
           <button type="button" className="btn-secondary" onClick={() => setShowWechat(true)}>
             {locale === "en" ? "WeChat / 微信" : "微信联系"}
           </button>

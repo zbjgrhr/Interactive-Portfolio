@@ -189,6 +189,15 @@ export function getProfileCopy(locale: Locale) {
 export const publicLinks = {
   email: "hxz439@alumni.bham.ac.uk",
   github: "https://github.com/zbjgrhr",
-  cv: "/downloads/Huaxin_Zhang_CV.docx",
+  resumes: {
+    en: {
+      href: "/downloads/Huaxin_Zhang_CV.docx",
+      filename: "Huaxin_Zhang_CV_English.docx",
+    },
+    zh: {
+      href: "/downloads/Huaxin_Zhang_CV_Chinese.pdf",
+      filename: "Huaxin_Zhang_CV_Chinese.pdf",
+    },
+  },
   portfolio: "/downloads/Zhang_Huaxin_Creative_Portfolio.pdf",
 } as const;
