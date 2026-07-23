@@ -126,7 +126,7 @@ export const GAME_LEVELS: GameLevel[] = [
     environment: "reply-pulse",
     accent: "#a7f3d0",
     accentNumber: 0xa7f3d0,
-    cover: "/portfolio/auto-reply-control.webp",
+    cover: "/portfolio/auto-reply-facebook-en.png",
     mechanic: t("Alternating lanes · response chains", "交替音轨 · 回复连锁"),
     narrative: [
       t("Repetition is useful only when control remains human.", "重复可以被自动化，但控制权必须留在人手中。"),
@@ -142,7 +142,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "The opportunity was not simply faster replies, but more deliberate control over them.",
           "机会不只是更快回复，而是让每次回复都更可控。",
         ),
-        image: "/portfolio/auto-reply-control.webp",
+        image: "/portfolio/auto-reply-facebook-en.png",
       },
       {
         eyebrow: t("02 / RULES → CONTROL", "02 / 规则 → 控制"),
@@ -151,7 +151,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Editable triggers, tone and exclusions keep the user inside the decision loop.",
           "可编辑的触发条件、语气和排除项，让用户始终处于决策回路中。",
         ),
-        image: "/portfolio/auto-reply-control.webp",
+        image: "/portfolio/auto-reply-facebook-en.png",
       },
       {
         eyebrow: t("03 / FLOW → RESPONSE", "03 / 流程 → 回应"),
@@ -160,7 +160,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Incoming context is checked, classified and routed before a response is produced.",
           "输入语境先经过检查、分类与路由，再生成最终回应。",
         ),
-        image: "/portfolio/auto-reply-flow.webp",
+        image: "/portfolio/auto-reply-x-zh.png",
       },
       {
         eyebrow: t("04 / OUTCOME → TRUST", "04 / 结果 → 信任"),
@@ -169,7 +169,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "The system demonstrates how small AI automations can remain transparent and reversible.",
           "这个系统展示了小型 AI 自动化如何保持透明、可逆与可接管。",
         ),
-        image: "/portfolio/auto-reply-flow.webp",
+        image: "/portfolio/auto-reply-x-zh.png",
       },
     ],
     ending: t("The best automation leaves the final decision visible.", "最好的自动化，会让最终决定始终可见。"),
@@ -263,7 +263,7 @@ export const GAME_LEVELS: GameLevel[] = [
     environment: "emotion-quiet",
     accent: "#c4b5fd",
     accentNumber: 0xc4b5fd,
-    cover: "/portfolio/innerseed-hero.webp",
+    cover: "/portfolio/innerseed-conversation-v2.png",
     mechanic: t("Dense syncopation · sustained notes", "密集切分 · 长按音符"),
     narrative: [
       t("Not every difficult signal needs to be corrected immediately.", "不是每个困难信号，都需要立刻被纠正。"),
@@ -279,7 +279,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "InnerSeed combines dialogue context, emotional signals and reflective prompts.",
           "InnerSeed 结合对话语境、情绪信号与反思式提示。",
         ),
-        image: "/portfolio/innerseed-hero.webp",
+        image: "/portfolio/innerseed-conversation-v2.png",
       },
       {
         eyebrow: t("02 / DIALOGUE → REFLECTION", "02 / 对话 → 反思"),
@@ -288,7 +288,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "The interaction guides reflection while keeping the user's interpretation central.",
           "交互引导用户反思，同时始终把用户自己的理解放在中心。",
         ),
-        image: "/portfolio/innerseed-system.webp",
+        image: "/portfolio/innerseed-state-inspector.png",
       },
       {
         eyebrow: t("03 / REVIEW → SAFETY", "03 / 审视 → 安全"),
@@ -297,7 +297,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Response review, confidence cues and boundaries make the system more accountable.",
           "回复审视、置信提示与边界设计，让系统更可追责。",
         ),
-        image: "/portfolio/innerseed-review.webp",
+        image: "/portfolio/innerseed-review-v2.png",
       },
       {
         eyebrow: t("04 / OUTCOME → TRUST", "04 / 结果 → 信任"),
@@ -306,7 +306,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Testing with 50 users reached 85% reported satisfaction.",
           "50 位测试用户中，报告满意度达到 85%。",
         ),
-        image: "/portfolio/innerseed-hero.webp",
+        image: "/portfolio/innerseed-conversation-v2.png",
       },
     ],
     ending: t("Expertise is knowing that restraint can also be a decision.", "真正的专业，也包括知道克制本身就是一种决定。"),
@@ -330,7 +330,7 @@ export const GAME_LEVELS: GameLevel[] = [
     environment: "research-wave",
     accent: "#fbbf24",
     accentNumber: 0xfbbf24,
-    cover: "/portfolio/eeg-processing.webp",
+    cover: "/portfolio/eeg-qc-workstation.png",
     mechanic: t("Tight timing · rapid chords · signal overload", "严格判定 · 快速和弦 · 信号过载"),
     narrative: [
       t("Raw signals rarely explain themselves.", "原始信号很少会自我解释。"),
@@ -346,7 +346,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "EEG and eye-tracking data arrive as noisy, time-sensitive streams rather than answers.",
           "EEG 与眼动数据以嘈杂、时间敏感的信息流抵达，而不是直接给出答案。",
         ),
-        image: "/portfolio/eeg-processing.webp",
+        image: "/portfolio/eeg-qc-workstation.png",
       },
       {
         eyebrow: t("02 / EEG → PROCESSING", "02 / EEG → 处理"),
@@ -355,7 +355,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Filtering, segmentation and feature extraction turn raw traces into comparable evidence.",
           "滤波、分段与特征提取，把原始轨迹转化为可比较证据。",
         ),
-        image: "/portfolio/eeg-processing.webp",
+        image: "/portfolio/eeg-qc-workstation.png",
       },
       {
         eyebrow: t("03 / GAZE → ATTENTION", "03 / 注视 → 注意"),
@@ -364,7 +364,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Gaze paths and fixation patterns add behavioural context to the neural signal.",
           "注视路径与停留模式，为神经信号补充行为语境。",
         ),
-        image: "/portfolio/eye-tracking.webp",
+        image: "/portfolio/eye-tracking-workstation.png",
       },
       {
         eyebrow: t("04 / FUSION → EVIDENCE", "04 / 融合 → 证据"),
@@ -373,7 +373,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Multimodal fusion connects physiology, attention and task context without erasing uncertainty.",
           "多模态融合连接生理、注意力与任务语境，同时保留不确定性。",
         ),
-        image: "/portfolio/multimodal-fusion.webp",
+        image: "/portfolio/multimodal-evaluation-workstation.png",
       },
     ],
     ending: t(

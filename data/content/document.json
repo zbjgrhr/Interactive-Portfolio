@@ -133,9 +133,9 @@
         "Not every signal needs to be corrected",
         "Thoughtful systems leave space"
       ],
-      "coverSrc": "/portfolio/innerseed-hero.webp",
+      "coverSrc": "/portfolio/innerseed-conversation-v2.png",
       "gallery": [
-        "/portfolio/innerseed-hero.webp"
+        "/portfolio/innerseed-conversation-v2.png"
       ]
     },
     {
@@ -171,9 +171,9 @@
         "Patterns emerge through careful questions",
         "Look beyond the visible interface"
       ],
-      "coverSrc": "/portfolio/eeg-processing.webp",
+      "coverSrc": "/portfolio/eeg-qc-workstation.png",
       "gallery": [
-        "/portfolio/eeg-processing.webp"
+        "/portfolio/eeg-qc-workstation.png"
       ]
     }
   ],
@@ -583,7 +583,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/innerseed-hero.webp",
+          "src": "/portfolio/innerseed-conversation-v2.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,
@@ -623,7 +623,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/eeg-processing.webp",
+          "src": "/portfolio/eeg-qc-workstation.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,

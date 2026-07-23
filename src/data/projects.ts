@@ -140,8 +140,8 @@ export const projects: ProjectArchive[] = [
     outcome:
       "A completed automation product that supports drafting and scheduling without removing human control.",
     screenshots: [
-      "/portfolio/auto-reply-control.webp",
-      "/portfolio/auto-reply-flow.webp",
+      "/portfolio/auto-reply-facebook-en.png",
+      "/portfolio/auto-reply-x-zh.png",
     ],
     github: "https://github.com/zbjgrhr/Social-Media_Auto-Reply",
     learned: [
@@ -183,9 +183,9 @@ export const projects: ProjectArchive[] = [
     outcome:
       "A product and system blueprint that connects emotional state, response strategy, memory, safety checks, and evaluation in one reviewable flow.",
     screenshots: [
-      "/portfolio/innerseed-hero.webp",
-      "/portfolio/innerseed-system.webp",
-      "/portfolio/innerseed-review.webp",
+      "/portfolio/innerseed-conversation-v2.png",
+      "/portfolio/innerseed-state-inspector.png",
+      "/portfolio/innerseed-review-v2.png",
     ],
     learned: [
       "Not every signal needs to be corrected",
@@ -232,9 +232,9 @@ export const projects: ProjectArchive[] = [
     outcome:
       "A disciplined research workflow that moves from raw acquisition through alignment, features, fusion, evaluation, and interpretable reporting.",
     screenshots: [
-      "/portfolio/eeg-processing.webp",
-      "/portfolio/eye-tracking.webp",
-      "/portfolio/multimodal-fusion.webp",
+      "/portfolio/eeg-qc-workstation.png",
+      "/portfolio/eye-tracking-workstation.png",
+      "/portfolio/multimodal-evaluation-workstation.png",
     ],
     learned: [
       "Raw signals rarely explain themselves",

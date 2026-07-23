@@ -183,7 +183,7 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeTextLayer("Some signals need to be heard.", 200, 120, 400, 40, 2, "#e879a9"),
-        makeImageLayer("/portfolio/innerseed-hero.webp", 660, 45, 420, 190, 1),
+        makeImageLayer("/portfolio/innerseed-conversation-v2.png", 660, 45, 420, 190, 1),
       ],
     },
     {
@@ -197,7 +197,7 @@ function seedFrames(): ContentFrame[] {
       endTime: 101,
       canvas: { ...MEMORY_CANVAS },
       layers: [
-        makeImageLayer("/portfolio/eeg-processing.webp", 160, 40, 400, 205, 1),
+        makeImageLayer("/portfolio/eeg-qc-workstation.png", 160, 40, 400, 205, 1),
         makeTextLayer("raw signals → structure", 160, 240, 320, 28, 2, "#f5e6a8"),
       ],
     },

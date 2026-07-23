@@ -167,22 +167,23 @@ export function ExploreView() {
               className={`project-article ${project.featured ? "project-featured" : ""}`}
               id={project.id}
             >
-              <div className="project-media">
-                {project.screenshots[0] ? (
-                  // eslint-disable-next-line @next/next/no-img-element
-                  <img
-                    src={project.screenshots[0]}
-                    alt={`${project.title} interface or system view`}
-                    width={1600}
-                    height={900}
-                  />
-                ) : (
-                  <div className="project-media-placeholder">{project.title}</div>
-                )}
-                <span className="project-number">{String(index + 1).padStart(2, "0")}</span>
-              </div>
+              <div className="project-overview">
+                <div className="project-media">
+                  {project.screenshots[0] ? (
+                    // eslint-disable-next-line @next/next/no-img-element
+                    <img
+                      src={project.screenshots[0]}
+                      alt={`${project.title} interface or system view`}
+                      width={1600}
+                      height={900}
+                    />
+                  ) : (
+                    <div className="project-media-placeholder">{project.title}</div>
+                  )}
+                  <span className="project-number">{String(index + 1).padStart(2, "0")}</span>
+                </div>
 
-              <div className="project-copy">
+                <div className="project-copy">
                 <div className="project-meta">
                   <span>{project.category}</span>
                   <span>{project.period}</span>
@@ -240,6 +241,7 @@ export function ExploreView() {
                     </a>
                   )}
                   {project.github && <a href={project.github} target="_blank" rel="noreferrer">GitHub ↗</a>}
+                </div>
                 </div>
               </div>
 

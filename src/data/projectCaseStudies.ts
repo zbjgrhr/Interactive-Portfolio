@@ -236,20 +236,20 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Facebook Web, X Web, and Instagram Web share one legible queue, schedule, platform state, and emergency stop.",
         visual: {
           kind: "image",
-          src: "/portfolio/auto-reply-control.webp",
-          alt: "Cross-platform social media reply control center",
-          fit: "contain",
+          src: "/portfolio/auto-reply-facebook-en.png",
+          alt: "Auto Reply extension reviewing an English draft inside Facebook Messenger",
+          fit: "cover",
         },
       },
       {
         step: "02",
-        title: "Automation pauses before it speaks",
-        body: "The system identifies the active conversation, gathers only necessary context, drafts a response, and waits for review.",
+        title: "One workflow, more than one language",
+        body: "The same review, queue, and scheduling controls support a Chinese conversation in X, while Instagram remains available through the shared platform switcher.",
         visual: {
           kind: "image",
-          src: "/portfolio/auto-reply-flow.webp",
-          alt: "Auto Reply draft, review, timing, and sending workflow",
-          fit: "contain",
+          src: "/portfolio/auto-reply-x-zh.png",
+          alt: "Auto Reply extension reviewing a Chinese draft inside X direct messages",
+          fit: "cover",
         },
       },
       {
@@ -287,20 +287,20 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Facebook 网页端、X 网页端与 Instagram 网页端共用清晰的队列、计时、平台状态和紧急停止入口。",
         visual: {
           kind: "image",
-          src: "/portfolio/auto-reply-control.webp",
-          alt: "跨平台社交媒体自动回复控制中心",
-          fit: "contain",
+          src: "/portfolio/auto-reply-facebook-en.png",
+          alt: "Auto Reply 在 Facebook Messenger 中复核英文回复草稿",
+          fit: "cover",
         },
       },
       {
         step: "02",
-        title: "自动化先停下来，再开口",
-        body: "系统识别当前对话，只获取必要语境，生成回复草稿，并在真正发送前等待人工复核。",
+        title: "同一套流程，不止一种语言",
+        body: "同样的复核、队列与定时控制可以处理 X 中的中文对话，并通过统一的平台切换继续支持 Instagram。",
         visual: {
           kind: "image",
-          src: "/portfolio/auto-reply-flow.webp",
-          alt: "自动回复的草稿、复核、计时与发送流程",
-          fit: "contain",
+          src: "/portfolio/auto-reply-x-zh.png",
+          alt: "Auto Reply 在 X 私信中复核中文回复草稿",
+          fit: "cover",
         },
       },
       {
@@ -340,9 +340,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Conversation, emotional state, intent, relationship context, and risk remain visible together instead of collapsing into one label.",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-hero.webp",
+          src: "/portfolio/innerseed-conversation-v2.png",
           alt: "InnerSeed conversation and emotional context interface",
-          fit: "contain",
+          fit: "cover",
         },
       },
       {
@@ -351,9 +351,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Mixed emotion, intensity, confidence, intent, relationship, and risk are structured before the dialogue policy selects a response mode.",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-system.webp",
-          alt: "InnerSeed emotional cognition and safety response architecture",
-          fit: "contain",
+          src: "/portfolio/innerseed-state-inspector.png",
+          alt: "InnerSeed state inspector for conversation turns and response strategy",
+          fit: "cover",
         },
       },
       {
@@ -379,9 +379,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Risk routing, memory cards, strategy history, and qualitative evaluation are replayed together so safety is tested rather than merely claimed.",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-review.webp",
+          src: "/portfolio/innerseed-review-v2.png",
           alt: "InnerSeed dialogue review, safety check, memory, and evaluation dashboard",
-          fit: "contain",
+          fit: "cover",
         },
       },
     ],
@@ -392,9 +392,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "对话、情绪状态、意图、关系语境与风险同时可见，而不是被压缩成一个简单标签。",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-hero.webp",
+          src: "/portfolio/innerseed-conversation-v2.png",
           alt: "InnerSeed 对话与情绪语境界面",
-          fit: "contain",
+          fit: "cover",
         },
       },
       {
@@ -403,9 +403,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "系统先组织混合情绪、强度、置信度、意图、关系和风险，再由对话策略选择响应方式。",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-system.webp",
-          alt: "InnerSeed 情绪认知与安全响应架构",
-          fit: "contain",
+          src: "/portfolio/innerseed-state-inspector.png",
+          alt: "InnerSeed 对话轮次、状态与响应策略检查台",
+          fit: "cover",
         },
       },
       {
@@ -431,9 +431,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "风险路由、记忆卡片、策略历史与质性评估被放在同一次回放中，让安全真正可测试。",
         visual: {
           kind: "image",
-          src: "/portfolio/innerseed-review.webp",
+          src: "/portfolio/innerseed-review-v2.png",
           alt: "InnerSeed 对话回放、安全检查、记忆与评估面板",
-          fit: "contain",
+          fit: "cover",
         },
       },
     ],
@@ -457,9 +457,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Bad-channel handling, filtering, re-referencing, artifact separation, and event segmentation precede interpretable EEG features.",
         visual: {
           kind: "image",
-          src: "/portfolio/eeg-processing.webp",
-          alt: "EEG preprocessing, artifact separation, and interpretable feature pipeline",
-          fit: "contain",
+          src: "/portfolio/eeg-qc-workstation.png",
+          alt: "EEG preprocessing and quality-control research workstation",
+          fit: "cover",
         },
       },
       {
@@ -468,9 +468,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "Fixation, saccade, pupil, transitions, calibration error, blinks, and tracking loss are interpreted within the same stimulus window.",
         visual: {
           kind: "image",
-          src: "/portfolio/eye-tracking.webp",
-          alt: "Eye-tracking processing and quality-controlled feature families",
-          fit: "contain",
+          src: "/portfolio/eye-tracking-workstation.png",
+          alt: "Eye-tracking fixation, AOI, pupil, and calibration analysis workstation",
+          fit: "cover",
         },
       },
       {
@@ -479,9 +479,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "EEG-only, eye-only, and fusion models are compared with subject-wise validation, modality ablation, confidence intervals, and interpretable feature plots.",
         visual: {
           kind: "image",
-          src: "/portfolio/multimodal-fusion.webp",
-          alt: "Aligned EEG and eye-tracking features entering multimodal fusion",
-          fit: "contain",
+          src: "/portfolio/multimodal-evaluation-workstation.png",
+          alt: "Multimodal EEG and eye-tracking experiment comparison dashboard",
+          fit: "cover",
         },
       },
     ],
@@ -503,9 +503,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "坏导处理、滤波、重参考、伪迹分离和事件分段先于可解释 EEG 特征与分类实验。",
         visual: {
           kind: "image",
-          src: "/portfolio/eeg-processing.webp",
-          alt: "EEG 预处理、伪迹分离与可解释特征流程",
-          fit: "contain",
+          src: "/portfolio/eeg-qc-workstation.png",
+          alt: "EEG 预处理与信号质量控制研究工作台",
+          fit: "cover",
         },
       },
       {
@@ -514,9 +514,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "注视、扫视、瞳孔、区域转移、校准误差、眨眼与追踪丢失都在同一刺激窗口中解释。",
         visual: {
           kind: "image",
-          src: "/portfolio/eye-tracking.webp",
-          alt: "眼动处理与质量可控的特征体系",
-          fit: "contain",
+          src: "/portfolio/eye-tracking-workstation.png",
+          alt: "包含注视、AOI、瞳孔与校准质量的眼动分析工作台",
+          fit: "cover",
         },
       },
       {
@@ -525,9 +525,9 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "比较 EEG-only、Eye-only 与 Fusion，并使用按受试者验证、模态消融、置信区间和可解释特征图检验互补性。",
         visual: {
           kind: "image",
-          src: "/portfolio/multimodal-fusion.webp",
-          alt: "对齐后的 EEG 与眼动特征进入多模态融合",
-          fit: "contain",
+          src: "/portfolio/multimodal-evaluation-workstation.png",
+          alt: "EEG 与眼动多模态实验对比和消融评估面板",
+          fit: "cover",
         },
       },
     ],
