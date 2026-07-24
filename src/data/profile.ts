@@ -191,8 +191,8 @@ export const publicLinks = {
   github: "https://github.com/zbjgrhr",
   resumes: {
     en: {
-      href: "/downloads/Huaxin_Zhang_CV.docx",
-      filename: "Huaxin_Zhang_CV_English.docx",
+      href: "/downloads/Huaxin_Zhang_CV_English.pdf",
+      filename: "Huaxin_Zhang_CV_English.pdf",
     },
     zh: {
       href: "/downloads/Huaxin_Zhang_CV_Chinese.pdf",

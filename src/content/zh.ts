@@ -95,7 +95,7 @@ export const zh = {
   contact: {
     email: "hxz439@alumni.bham.ac.uk",
     github: "https://github.com/zbjgrhr",
-    cvPath: "/downloads/Huaxin_Zhang_CV.docx",
+    cvPath: "/downloads/Huaxin_Zhang_CV_Chinese.pdf",
     portfolioPath: "/downloads/Zhang_Huaxin_Creative_Portfolio.pdf",
   },
   coda: {

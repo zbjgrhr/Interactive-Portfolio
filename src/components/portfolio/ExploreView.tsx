@@ -14,10 +14,10 @@ function ResumeDownloadLinks({ locale }: { locale: "en" | "zh" }) {
   const options = locale === "zh"
     ? [
         { ...publicLinks.resumes.zh, label: "中文简历 · PDF" },
-        { ...publicLinks.resumes.en, label: "English CV · DOCX" },
+        { ...publicLinks.resumes.en, label: "English CV · PDF" },
       ]
     : [
-        { ...publicLinks.resumes.en, label: "English CV · DOCX" },
+        { ...publicLinks.resumes.en, label: "English CV · PDF" },
         { ...publicLinks.resumes.zh, label: "中文简历 · PDF" },
       ];
 

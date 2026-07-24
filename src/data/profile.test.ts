@@ -6,7 +6,7 @@ import { publicLinks } from "@/data/profile";
 describe("resume downloads", () => {
   it("exposes separate English and Chinese resume files", () => {
     expect(publicLinks.resumes.en.href).not.toBe(publicLinks.resumes.zh.href);
-    expect(publicLinks.resumes.en.filename).toMatch(/English\.docx$/);
+    expect(publicLinks.resumes.en.filename).toMatch(/English\.pdf$/);
     expect(publicLinks.resumes.zh.filename).toMatch(/Chinese\.pdf$/);
   });
 
