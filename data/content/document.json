@@ -58,12 +58,12 @@
         "Constraints become creative controls when the maker can inspect, approve, and retry them",
         "A generated world is complete only when it survives play, persistence, and delivery"
       ],
-      "coverSrc": "/portfolio/pixel-world-v4-studio.png",
+      "coverSrc": "/portfolio/pixel-world-v4-generated-world.png",
       "gallery": [
-        "/portfolio/pixel-world-v4-studio.png",
+        "/portfolio/pixel-world-v4-generated-world.png",
         "/portfolio/pixel-world-v4-providers.png",
         "/portfolio/pixel-world-v4-theme-library.png",
-        "/portfolio/pixel-world-v4-asset-review.png"
+        "/portfolio/pixel-world-v4-generated-assets.png"
       ],
       "github": "https://github.com/zbjgrhr/PIXEL-WORLD",
       "liveDemo": "https://pixel-world-silk.vercel.app/",
@@ -441,7 +441,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/pixel-world-v4-asset-review.png",
+          "src": "/portfolio/pixel-world-v4-generated-assets.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,

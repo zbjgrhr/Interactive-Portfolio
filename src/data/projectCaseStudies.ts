@@ -68,8 +68,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "The approved plan expands into editable asset cards, per-level assignment, generation status, parallel queues, and item-level retry. Visual assets, behaviors, Web Audio cues, and runtime rules remain inspectable in the same workspace.",
         visual: {
           kind: "image",
-          src: "/portfolio/pixel-world-v4-asset-review.png",
-          alt: "Pixel World asset cards with action controls, level assignment, and generation state",
+          src: "/portfolio/pixel-world-v4-generated-assets.png",
+          alt: "Pixel World asset workshop filled with successfully generated characters, weapons, effects, collectibles, and level components",
           fit: "cover",
         },
       },
@@ -79,8 +79,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "The same specification drives combat, character actions, enemies, collectibles, level effects, boss rules, save/load, and ZIP export. The new Darabangba campaign demonstrates a two-level inverted fairy tale with melee, ranged combat, and a final boss.",
         visual: {
           kind: "image",
-          src: "/portfolio/pixel-world-v4-studio.png",
-          alt: "Pixel World authoring studio with provider controls, theme library, asset review, and export",
+          src: "/portfolio/pixel-world-v4-generated-world.png",
+          alt: "A vivid completed pixel world generated through the Pixel World production pipeline",
           fit: "cover",
         },
       },
@@ -114,8 +114,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "批准后的规划被展开为可编辑素材卡、关卡分配、生成状态、并行队列与逐项重试。视觉素材、行为规则、Web Audio 音效和运行时约束都留在同一个可检查的工作区。",
         visual: {
           kind: "image",
-          src: "/portfolio/pixel-world-v4-asset-review.png",
-          alt: "Pixel World 带有动作控制、关卡分配与生成状态的素材卡片",
+          src: "/portfolio/pixel-world-v4-generated-assets.png",
+          alt: "Pixel World 素材工坊中已经成功生成的角色、武器、特效、收集品与关卡组件",
           fit: "cover",
         },
       },
@@ -125,8 +125,8 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         body: "同一份规格继续驱动战斗、角色动作、敌人、收集品、关卡特效、Boss 规则、存档与 ZIP 导出。新版《达拉崩吧之——公主杀王子救恶龙》验证了双关卡、近战与远程战斗以及最终 Boss。",
         visual: {
           kind: "image",
-          src: "/portfolio/pixel-world-v4-studio.png",
-          alt: "包含模型控制、主题库、素材审核与导出的 Pixel World 创作工作室",
+          src: "/portfolio/pixel-world-v4-generated-world.png",
+          alt: "通过 Pixel World 生产管线生成的高完成度像素世界",
           fit: "cover",
         },
       },

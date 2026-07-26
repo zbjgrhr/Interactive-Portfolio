@@ -56,10 +56,10 @@ export const projects: ProjectArchive[] = [
     outcome:
       "A live multi-agent game creation product that moves from an approved creative brief to a reviewable GameSpec, governed asset system, playable campaign, local save, and offline package. The new Darabangba project demonstrates a two-level inverted fairy tale with melee, ranged combat, and a final boss.",
     screenshots: [
-      "/portfolio/pixel-world-v4-studio.png",
+      "/portfolio/pixel-world-v4-generated-world.png",
       "/portfolio/pixel-world-v4-providers.png",
       "/portfolio/pixel-world-v4-theme-library.png",
-      "/portfolio/pixel-world-v4-asset-review.png",
+      "/portfolio/pixel-world-v4-generated-assets.png",
     ],
     github: "https://github.com/zbjgrhr/PIXEL-WORLD",
     liveDemo: "https://pixel-world-silk.vercel.app/",

@@ -136,7 +136,7 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(120, 185, 500, 120, 0),
-        makeImageLayer("/portfolio/pixel-world-v4-studio.png", 140, 200, 220, 90, 1),
+        makeImageLayer("/portfolio/pixel-world-v4-generated-world.png", 140, 200, 220, 90, 1),
         makeTextLayer("10 agents → review → creator approval", 380, 225, 220, 42, 2),
       ],
     },
@@ -152,7 +152,7 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(760, 35, 430, 260, 0),
-        makeImageLayer("/portfolio/pixel-world-v4-asset-review.png", 780, 55, 390, 200, 1),
+        makeImageLayer("/portfolio/pixel-world-v4-generated-assets.png", 780, 55, 390, 200, 1),
         makeTextLayer("reviewed assets → playable ZIP", 780, 262, 390, 24, 2, "#f5e6a8"),
       ],
     },

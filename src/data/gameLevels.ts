@@ -193,7 +193,7 @@ export const GAME_LEVELS: GameLevel[] = [
     environment: "pixel-world",
     accent: "#f472b6",
     accentNumber: 0xf472b6,
-    cover: "/portfolio/pixel-world-v4-studio.png",
+    cover: "/portfolio/pixel-world-v4-generated-world.png",
     mechanic: t("Fast phrases · chained strikes · world shifts", "高速乐句 · 连续击打 · 世界切换"),
     narrative: [
       t("The model is chosen in the open, so cost and visual direction remain visible.", "模型在明处被选择，因此成本与视觉方向始终可见。"),
@@ -218,7 +218,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Specialists for direction, narrative, mechanics, art, levels, integration, consistency, QA, revision, and assets cross-review the plan before generation.",
           "总控、叙事、玩法、美术、关卡、整合、一致性、引擎检查、修订与素材统筹会在生成前交叉复核方案。",
         ),
-        image: "/portfolio/pixel-world-v4-studio.png",
+        image: "/portfolio/pixel-world-v4-generated-world.png",
       },
       {
         eyebrow: t("03 / SPEC → ASSETS", "03 / 规格 → 素材"),
@@ -227,7 +227,7 @@ export const GAME_LEVELS: GameLevel[] = [
           "Approved rules expand into editable asset cards with generation state, level assignment, selective retry, and one locked visual model per project.",
           "获批规则会展开成可编辑素材卡，并保留生成状态、关卡归属、逐项重试与项目统一视觉模型。",
         ),
-        image: "/portfolio/pixel-world-v4-asset-review.png",
+        image: "/portfolio/pixel-world-v4-generated-assets.png",
       },
       {
         eyebrow: t("04 / ASSETS → PLAY", "04 / 素材 → 游玩"),
