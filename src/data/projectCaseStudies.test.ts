@@ -52,4 +52,19 @@ describe("project case studies", () => {
       }
     }
   });
+
+  it("uses the current Pixel World multi-agent product captures", () => {
+    for (const locale of ["en", "zh"] as const) {
+      const imagePaths = projectCaseStudies["pixel-seed"][locale]
+        .filter((section) => section.visual.kind === "image")
+        .map((section) =>
+          section.visual.kind === "image" ? section.visual.src : "",
+        );
+
+      expect(imagePaths).not.toHaveLength(0);
+      expect(imagePaths.every((src) => src.includes("pixel-world-v4-"))).toBe(
+        true,
+      );
+    }
+  });
 });

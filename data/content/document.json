@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-07-21T00:00:00.000Z",
+  "updatedAt": "2026-07-26T00:00:00.000Z",
   "localeDefaults": {
     "en": true,
     "zh": true
@@ -9,21 +9,23 @@
     {
       "id": "pixel-seed",
       "title": "Pixel World",
-      "oneLiner": "One idea becomes an editable game specification, a controllable asset system, and a playable world that can ship.",
-      "context": "Pixel World carries an idea through GameSpec V3, asset planning, generation, review, level assignment, runtime assembly, playtesting, and offline export.",
-      "problem": "Free-form imagination has to become dozens of coordinated, runtime-safe decisions without taking creative control away from the maker.",
-      "role": "Independent product ownership and full-stack implementation across research, product architecture, generation pipelines, interaction design, game runtime, persistence, and deployment.",
+      "oneLiner": "A prompt becomes a cross-reviewed GameSpec, a governed production pipeline, and a playable pixel game that can ship.",
+      "context": "Pixel World now combines multi-provider model access, a ten-agent creative studio, GameSpec V3, creator approval, governed asset production, runtime validation, and offline export in one continuous product.",
+      "problem": "A free-form idea has to become a coherent story, mechanics, art direction, level plan, runtime-safe assets, and testable rules without hiding cost, failure, or creative decisions from the maker.",
+      "role": "Independent product ownership and full-stack implementation across multi-agent orchestration, provider routing, GameSpec and review contracts, asset pipelines, interaction design, the custom 2D runtime, persistence, export, and deployment.",
       "process": [
-        "Translate a free-form idea into GameSpec V3",
-        "Expand the specification into 38 editable asset categories",
-        "Generate and review assets plus seven independent character actions",
-        "Validate the result in a five-level playable runtime",
-        "Export the finished world as a complete offline game"
+        "Capture the premise and constraints, then complete GameSpec V3 without overwriting the creator's intent",
+        "Run ten specialist agents across direction, narrative, mechanics, art, levels, integration, consistency, engine QA, revision, and asset coordination",
+        "Cross-review the specification and require creator approval before image generation begins",
+        "Lock one image model per project and execute editable, recoverable asset queues",
+        "Assign assets per level, test the rules in the custom runtime, save locally, and export an offline ZIP"
       ],
       "keyDecisions": [
-        "Make the specification inspectable before generation begins",
-        "Keep every generation task modular, recoverable, and editable",
-        "Use playability and export as the final proof of quality"
+        "Separate planning models from image models while locking one visual model per project for consistency",
+        "Treat agent outputs as proposals under creator approval",
+        "Keep agent runs and asset tasks independently retryable",
+        "Make every asset, level assignment, runtime constraint, and QA recommendation inspectable",
+        "Use playability, persistence, and offline export as the final proof of quality"
       ],
       "technology": [
         "Next.js 15",
@@ -31,41 +33,49 @@
         "TypeScript",
         "Ant Design",
         "Zustand",
-        "Seedream 4.5",
-        "FLUX.2 Pro",
+        "Multi-agent orchestration",
+        "GameSpec V3",
+        "OpenRouter",
+        "OpenAI",
+        "Alibaba DashScope",
+        "Cloudflare Workers AI",
+        "FLUX.2 Klein 4B",
         "IndexedDB",
         "Web Audio",
         "Custom 2D runtime"
       ],
       "challenges": [
-        "Keeping 38 asset categories coherent and runtime-safe",
-        "Mapping expressive prompts into structured rules",
-        "Recovering from partial generation and persistence failures"
+        "Keeping ten specialist agents aligned without hiding the process",
+        "Preserving explicit creator decisions while agents fill gaps and validate engine constraints",
+        "Normalizing provider credentials, regions, pricing, and response formats",
+        "Maintaining visual consistency while preserving item-level retry and level assignment",
+        "Keeping the generated game stable after save, load, and ZIP export"
       ],
-      "outcome": "A live V3 product that turns one idea into a reviewable asset system and a five-level game, then exports the finished world as an offline package.",
+      "outcome": "A live multi-agent game creation product that moves from an approved brief to a reviewable GameSpec, governed asset system, playable campaign, local save, and offline package. The Darabangba project demonstrates a two-level inverted fairy tale with melee, ranged combat, and a final boss.",
       "learned": [
-        "Creative AI becomes a product when uncertain steps can be inspected, corrected, and resumed",
-        "A world is complete only when it survives play, persistence, and delivery"
+        "Multi-agent systems become useful when responsibility, review order, failure, and creator approval are visible",
+        "Model choice is a product decision involving style, cost, region, and recovery",
+        "Constraints become creative controls when the maker can inspect, approve, and retry them",
+        "A generated world is complete only when it survives play, persistence, and delivery"
       ],
-      "coverSrc": "/portfolio/pixel-world-gameplay.png",
+      "coverSrc": "/portfolio/pixel-world-v4-studio.png",
       "gallery": [
-        "/portfolio/pixel-world-gameplay.png",
-        "/portfolio/pixel-world-spec.png",
-        "/portfolio/pixel-world-assets.png",
-        "/portfolio/pixel-world-actions.png",
-        "/portfolio/pixel-world-water.png"
+        "/portfolio/pixel-world-v4-studio.png",
+        "/portfolio/pixel-world-v4-providers.png",
+        "/portfolio/pixel-world-v4-theme-library.png",
+        "/portfolio/pixel-world-v4-asset-review.png"
       ],
       "github": "https://github.com/zbjgrhr/PIXEL-WORLD",
       "liveDemo": "https://pixel-world-silk.vercel.app/",
-      "category": "AI Product · Game Systems",
+      "category": "Multi-Agent AI Product · Game Creation System",
       "period": "2024–2026 · Independent product",
-      "status": "V3 · Live product",
+      "status": "Live · Multi-agent edition",
       "featured": true,
       "metrics": [
-        { "value": "5", "label": "distinct levels" },
-        { "value": "38", "label": "asset categories" },
-        { "value": "7", "label": "character actions" },
-        { "value": "ZIP", "label": "offline delivery" }
+        { "value": "10", "label": "specialist agents" },
+        { "value": "8", "label": "image-provider routes" },
+        { "value": "V3", "label": "reviewed game specification" },
+        { "value": "ZIP", "label": "playable offline delivery" }
       ]
     },
     {
@@ -249,7 +259,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "idea → GameSpec → playable world",
+          "text": "idea → ten agents → approved world",
           "textStyle": {
             "color": "#5eead4",
             "fontSize": 14,
@@ -263,7 +273,7 @@
     },
     {
       "id": "frame-pixel-2",
-      "name": "Pixel World — GameSpec",
+      "name": "Pixel World — Model Routes",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 2,
@@ -308,7 +318,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/pixel-world-spec.png",
+          "src": "/portfolio/pixel-world-v4-providers.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,
@@ -332,7 +342,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "editable GameSpec V3",
+          "text": "provider lock → GameSpec V3",
           "textStyle": {
             "color": "#8fa0b8",
             "fontSize": 14,
@@ -346,7 +356,7 @@
     },
     {
       "id": "frame-pixel-3",
-      "name": "Pixel World — Asset System",
+      "name": "Pixel World — Agent Review",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 3,
@@ -372,7 +382,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "38 asset categories → level assignment",
+          "text": "10 agents → review → creator approval",
           "textStyle": {
             "color": "#5eead4",
             "fontSize": 14,
@@ -386,7 +396,7 @@
     },
     {
       "id": "frame-pixel-4",
-      "name": "Pixel World — Playable Runtime",
+      "name": "Pixel World — Governed Production",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 4,
@@ -431,7 +441,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/pixel-world-gameplay.png",
+          "src": "/portfolio/pixel-world-v4-asset-review.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,
@@ -455,7 +465,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "five levels → offline game",
+          "text": "reviewed assets → playable ZIP",
           "textStyle": {
             "color": "#f5e6a8",
             "fontSize": 14,
@@ -674,16 +684,20 @@
       "en": "I build where intelligence, interaction and imagination meet."
     },
     "pixel-1": {
-      "en": "An idea becomes a specification before it becomes an image."
+      "en": "The model is chosen in the open, so cost and visual direction remain visible.",
+      "zh": "模型在明处被选择，因此成本与视觉方向始终可见。"
     },
     "pixel-2": {
-      "en": "Assets become rules; rules become movement."
+      "en": "Ten agents plan and cross-review the world before the creator approves generation.",
+      "zh": "十个 Agent 先共同规划并交叉复核，再由创作者批准生成。"
     },
     "pixel-3": {
-      "en": "A world is complete only when it can be entered, tested, and repaired."
+      "en": "Every asset keeps its status, level assignment, and an independent path to retry.",
+      "zh": "每项素材都保留状态、关卡归属与独立重试入口。"
     },
     "pixel-4": {
-      "en": "Pixel World: from imagination to a game you can take with you."
+      "en": "GameSpec becomes a playable campaign that can be saved, tested, and exported.",
+      "zh": "GameSpec 最终成为可以保存、试玩与导出的可玩关卡。"
     },
     "browser-1": {
       "en": "You cleared the noise."

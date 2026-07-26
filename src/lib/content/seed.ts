@@ -105,12 +105,12 @@ function seedFrames(): ContentFrame[] {
       layers: [
         makeFrameLayer(120, 60, 320, 100, 0),
         makeTextLayer("PIXEL WORLD", 140, 80, 280, 36, 2, "#e879a9"),
-        makeTextLayer("idea → GameSpec → playable world", 140, 115, 280, 30, 2),
+        makeTextLayer("idea → ten agents → approved world", 140, 115, 280, 30, 2),
       ],
     },
     {
       id: "frame-pixel-2",
-      name: "Pixel World — GameSpec",
+      name: "Pixel World — Model Routes",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 2,
@@ -120,13 +120,13 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(430, 30, 400, 250, 0),
-        makeImageLayer("/portfolio/pixel-world-spec.png", 450, 50, 360, 185, 1),
-        makeTextLayer("editable GameSpec V3", 450, 242, 360, 24, 2, "#8fa0b8"),
+        makeImageLayer("/portfolio/pixel-world-v4-providers.png", 450, 50, 360, 185, 1),
+        makeTextLayer("provider lock → GameSpec V3", 450, 242, 360, 24, 2, "#8fa0b8"),
       ],
     },
     {
       id: "frame-pixel-3",
-      name: "Pixel World — Asset System",
+      name: "Pixel World — Agent Review",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 3,
@@ -136,13 +136,13 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(120, 185, 500, 120, 0),
-        makeImageLayer("/portfolio/pixel-world-assets.png", 140, 200, 220, 90, 1),
-        makeTextLayer("38 asset categories → level assignment", 380, 225, 220, 42, 2),
+        makeImageLayer("/portfolio/pixel-world-v4-studio.png", 140, 200, 220, 90, 1),
+        makeTextLayer("10 agents → review → creator approval", 380, 225, 220, 42, 2),
       ],
     },
     {
       id: "frame-pixel-4",
-      name: "Pixel World — Playable Runtime",
+      name: "Pixel World — Governed Production",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 4,
@@ -152,8 +152,8 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(760, 35, 430, 260, 0),
-        makeImageLayer("/portfolio/pixel-world-gameplay.png", 780, 55, 390, 200, 1),
-        makeTextLayer("five levels → offline game", 780, 262, 390, 24, 2, "#f5e6a8"),
+        makeImageLayer("/portfolio/pixel-world-v4-asset-review.png", 780, 55, 390, 200, 1),
+        makeTextLayer("reviewed assets → playable ZIP", 780, 262, 390, 24, 2, "#f5e6a8"),
       ],
     },
     {
