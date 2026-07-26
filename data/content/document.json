@@ -9,23 +9,25 @@
     {
       "id": "pixel-seed",
       "title": "Pixel World",
-      "oneLiner": "A prompt becomes a cross-reviewed GameSpec, a governed production pipeline, and a playable pixel game that can ship.",
-      "context": "Pixel World now combines multi-provider model access, a ten-agent creative studio, GameSpec V3, creator approval, governed asset production, runtime validation, and offline export in one continuous product.",
-      "problem": "A free-form idea has to become a coherent story, mechanics, art direction, level plan, runtime-safe assets, and testable rules without hiding cost, failure, or creative decisions from the maker.",
+      "oneLiner": "Write a world once; ten agents turn it into a reviewed, beautifully generated, locally saved game you can play and take home.",
+      "context": "Pixel World carries a maker's premise through a visible ten-agent studio, cross-reviewed GameSpec V3, multi-provider generation, a bright adaptive product interface, a custom playable runtime, local persistence, and offline delivery.",
+      "problem": "A free-form idea has to become one coherent game—story, mechanics, art direction, assets, levels, audio, runtime rules, save state, and export—without hiding cost, failure, or creative decisions from the maker.",
       "role": "Independent product ownership and full-stack implementation across multi-agent orchestration, provider routing, GameSpec and review contracts, asset pipelines, interaction design, the custom 2D runtime, persistence, export, and deployment.",
       "process": [
-        "Capture the premise and constraints, then complete GameSpec V3 without overwriting the creator's intent",
-        "Run ten specialist agents across direction, narrative, mechanics, art, levels, integration, consistency, engine QA, revision, and asset coordination",
-        "Cross-review the specification and require creator approval before image generation begins",
-        "Lock one image model per project and execute editable, recoverable asset queues",
-        "Assign assets per level, test the rules in the custom runtime, save locally, and export an offline ZIP"
+        "Capture the premise, levels, and constraints, then complete GameSpec V3 without overwriting the creator's intent",
+        "Run ten specialist agents, cross-review their proposals, and require creator approval before generation",
+        "Choose among eight image routes and three Agent platforms, then lock one visual model per project",
+        "Generate editable level-aware asset queues in parallel and retry only failed work",
+        "Replace the default product hero with the generated game's own cover",
+        "Play, save, reload, and export the complete game as an offline ZIP"
       ],
       "keyDecisions": [
         "Separate planning models from image models while locking one visual model per project for consistency",
         "Treat agent outputs as proposals under creator approval",
         "Keep agent runs and asset tasks independently retryable",
         "Make every asset, level assignment, runtime constraint, and QA recommendation inspectable",
-        "Use playability, persistence, and offline export as the final proof of quality"
+        "Let each generated world's cover replace the default product hero",
+        "Use playability, local persistence, and offline export as the final proof of quality"
       ],
       "technology": [
         "Next.js 15",
@@ -51,19 +53,22 @@
         "Maintaining visual consistency while preserving item-level retry and level assignment",
         "Keeping the generated game stable after save, load, and ZIP export"
       ],
-      "outcome": "A live multi-agent game creation product that moves from an approved brief to a reviewable GameSpec, governed asset system, playable campaign, local save, and offline package. The Darabangba project demonstrates a two-level inverted fairy tale with melee, ranged combat, and a final boss.",
+      "outcome": "A live prompt-to-game product that moves from an approved premise to a reviewed specification, recoverable generation plan, adaptive product cover, playable campaign, local save, and downloadable offline game. Darabangba demonstrates bright distinct levels, melee and ranged combat, collectibles, and a final Prince boss.",
       "learned": [
         "Multi-agent systems become useful when responsibility, review order, failure, and creator approval are visible",
         "Model choice is a product decision involving style, cost, region, and recovery",
         "Constraints become creative controls when the maker can inspect, approve, and retry them",
-        "A generated world is complete only when it survives play, persistence, and delivery"
+        "The product itself can come alive when the generated world's cover becomes its interface",
+        "A generated world is complete only when it survives play, local persistence, and delivery"
       ],
-      "coverSrc": "/portfolio/pixel-world-v4-generated-world.png",
+      "coverSrc": "/portfolio/pixel-world-v5-generated-cover.png",
       "gallery": [
-        "/portfolio/pixel-world-v4-generated-world.png",
-        "/portfolio/pixel-world-v4-providers.png",
-        "/portfolio/pixel-world-v4-theme-library.png",
-        "/portfolio/pixel-world-v4-generated-assets.png"
+        "/portfolio/pixel-world-v5-generated-cover.png",
+        "/portfolio/pixel-world-v5-dynamic-home.png",
+        "/portfolio/pixel-world-v5-agent-studio.png",
+        "/portfolio/pixel-world-v5-parallel-generation.png",
+        "/portfolio/pixel-world-v5-gameplay-level-1.png",
+        "/portfolio/pixel-world-v5-gameplay-boss.png"
       ],
       "github": "https://github.com/zbjgrhr/PIXEL-WORLD",
       "liveDemo": "https://pixel-world-silk.vercel.app/",
@@ -73,7 +78,7 @@
       "featured": true,
       "metrics": [
         { "value": "10", "label": "specialist agents" },
-        { "value": "8", "label": "image-provider routes" },
+        { "value": "11", "label": "model-provider routes" },
         { "value": "V3", "label": "reviewed game specification" },
         { "value": "ZIP", "label": "playable offline delivery" }
       ]
@@ -259,7 +264,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "idea → ten agents → approved world",
+          "text": "prompt → ten agents → owned game",
           "textStyle": {
             "color": "#5eead4",
             "fontSize": 14,
@@ -273,7 +278,7 @@
     },
     {
       "id": "frame-pixel-2",
-      "name": "Pixel World — Model Routes",
+      "name": "Pixel World — Agent Studio",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 2,
@@ -318,8 +323,8 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/pixel-world-v4-providers.png",
-          "objectFit": "cover",
+          "src": "/portfolio/pixel-world-v5-agent-studio.png",
+          "objectFit": "contain",
           "filters": {
             "brightness": 1,
             "contrast": 1,
@@ -342,7 +347,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "provider lock → GameSpec V3",
+          "text": "10 agents → cross-review → approval",
           "textStyle": {
             "color": "#8fa0b8",
             "fontSize": 14,
@@ -356,7 +361,7 @@
     },
     {
       "id": "frame-pixel-3",
-      "name": "Pixel World — Agent Review",
+      "name": "Pixel World — Living Cover",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 3,
@@ -369,20 +374,44 @@
       },
       "layers": [
         {
+          "id": "layer-pixel-living-cover",
+          "type": "image",
+          "name": "Generated world cover",
+          "transform": {
+            "x": 140,
+            "y": 185,
+            "w": 320,
+            "h": 120,
+            "zIndex": 1,
+            "opacity": 1,
+            "rotation": 0
+          },
+          "visible": true,
+          "src": "/portfolio/pixel-world-v5-dynamic-home.png",
+          "objectFit": "cover",
+          "filters": {
+            "brightness": 1,
+            "contrast": 1,
+            "saturate": 1,
+            "blur": 0,
+            "grayscale": 0
+          }
+        },
+        {
           "id": "layer-81yw0fk",
           "type": "text",
           "name": "Text",
           "transform": {
-            "x": 160,
+            "x": 480,
             "y": 220,
-            "w": 360,
+            "w": 250,
             "h": 30,
             "zIndex": 2,
             "opacity": 1,
             "rotation": 0
           },
           "visible": true,
-          "text": "10 agents → review → creator approval",
+          "text": "generated world → new product cover",
           "textStyle": {
             "color": "#5eead4",
             "fontSize": 14,
@@ -396,7 +425,7 @@
     },
     {
       "id": "frame-pixel-4",
-      "name": "Pixel World — Governed Production",
+      "name": "Pixel World — Playable Delivery",
       "chapter": "movement-i",
       "projectId": "pixel-seed",
       "revealLevel": 4,
@@ -441,7 +470,7 @@
             "rotation": 0
           },
           "visible": true,
-          "src": "/portfolio/pixel-world-v4-generated-assets.png",
+          "src": "/portfolio/pixel-world-v5-gameplay-level-1.png",
           "objectFit": "cover",
           "filters": {
             "brightness": 1,
@@ -465,7 +494,7 @@
             "rotation": 0
           },
           "visible": true,
-          "text": "reviewed assets → playable ZIP",
+          "text": "play → save locally → export ZIP",
           "textStyle": {
             "color": "#f5e6a8",
             "fontSize": 14,
@@ -684,20 +713,20 @@
       "en": "I build where intelligence, interaction and imagination meet."
     },
     "pixel-1": {
-      "en": "The model is chosen in the open, so cost and visual direction remain visible.",
-      "zh": "模型在明处被选择，因此成本与视觉方向始终可见。"
+      "en": "A story becomes a production contract without losing its strange, human premise.",
+      "zh": "故事被整理成生产契约，却不会丢掉原本古怪而真实的创意。"
     },
     "pixel-2": {
-      "en": "Ten agents plan and cross-review the world before the creator approves generation.",
-      "zh": "十个 Agent 先共同规划并交叉复核，再由创作者批准生成。"
+      "en": "Ten agents divide the work, cross-review it, and expose every conflict before generation.",
+      "zh": "十个 Agent 分工、互审，并在生成前把每个冲突摆到明处。"
     },
     "pixel-3": {
-      "en": "Every asset keeps its status, level assignment, and an independent path to retry.",
-      "zh": "每项素材都保留状态、关卡归属与独立重试入口。"
+      "en": "When the world is generated, its own bright cover replaces the builder's default background.",
+      "zh": "世界生成完成后，它鲜亮的封面会直接替换创作器默认背景。"
     },
     "pixel-4": {
-      "en": "GameSpec becomes a playable campaign that can be saved, tested, and exported.",
-      "zh": "GameSpec 最终成为可以保存、试玩与导出的可玩关卡。"
+      "en": "The result is played, saved locally, reopened, and carried away as an offline game.",
+      "zh": "结果会被真正游玩、保存在本地、再次打开，并作为离线游戏带走。"
     },
     "browser-1": {
       "en": "You cleared the noise."

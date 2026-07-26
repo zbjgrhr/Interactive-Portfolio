@@ -105,12 +105,12 @@ function seedFrames(): ContentFrame[] {
       layers: [
         makeFrameLayer(120, 60, 320, 100, 0),
         makeTextLayer("PIXEL WORLD", 140, 80, 280, 36, 2, "#e879a9"),
-        makeTextLayer("idea → ten agents → approved world", 140, 115, 280, 30, 2),
+        makeTextLayer("prompt → ten agents → owned game", 140, 115, 280, 30, 2),
       ],
     },
     {
       id: "frame-pixel-2",
-      name: "Pixel World — Model Routes",
+      name: "Pixel World — Agent Studio",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 2,
@@ -120,13 +120,13 @@ function seedFrames(): ContentFrame[] {
       canvas: { ...MEMORY_CANVAS },
       layers: [
         makeFrameLayer(430, 30, 400, 250, 0),
-        makeImageLayer("/portfolio/pixel-world-v4-providers.png", 450, 50, 360, 185, 1),
-        makeTextLayer("provider lock → GameSpec V3", 450, 242, 360, 24, 2, "#8fa0b8"),
+        makeImageLayer("/portfolio/pixel-world-v5-agent-studio.png", 450, 45, 165, 220, 1),
+        makeTextLayer("10 agents\ncross-review\ncreator approval", 640, 90, 170, 105, 2, "#8fa0b8"),
       ],
     },
     {
       id: "frame-pixel-3",
-      name: "Pixel World — Agent Review",
+      name: "Pixel World — Living Cover",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 3,
@@ -135,14 +135,14 @@ function seedFrames(): ContentFrame[] {
       endTime: 37,
       canvas: { ...MEMORY_CANVAS },
       layers: [
-        makeFrameLayer(120, 185, 500, 120, 0),
-        makeImageLayer("/portfolio/pixel-world-v4-generated-world.png", 140, 200, 220, 90, 1),
-        makeTextLayer("10 agents → review → creator approval", 380, 225, 220, 42, 2),
+        makeFrameLayer(90, 175, 600, 135, 0),
+        makeImageLayer("/portfolio/pixel-world-v5-dynamic-home.png", 110, 190, 300, 105, 1),
+        makeTextLayer("generated world\n→ new product cover", 430, 215, 230, 60, 2),
       ],
     },
     {
       id: "frame-pixel-4",
-      name: "Pixel World — Governed Production",
+      name: "Pixel World — Playable Delivery",
       chapter: "movement-i",
       projectId: "pixel-seed",
       revealLevel: 4,
@@ -151,9 +151,9 @@ function seedFrames(): ContentFrame[] {
       endTime: 39,
       canvas: { ...MEMORY_CANVAS },
       layers: [
-        makeFrameLayer(760, 35, 430, 260, 0),
-        makeImageLayer("/portfolio/pixel-world-v4-generated-assets.png", 780, 55, 390, 200, 1),
-        makeTextLayer("reviewed assets → playable ZIP", 780, 262, 390, 24, 2, "#f5e6a8"),
+        makeFrameLayer(740, 35, 470, 260, 0),
+        makeImageLayer("/portfolio/pixel-world-v5-gameplay-level-1.png", 760, 55, 430, 195, 1),
+        makeTextLayer("play → save locally → export ZIP", 760, 258, 430, 24, 2, "#f5e6a8"),
       ],
     },
     {

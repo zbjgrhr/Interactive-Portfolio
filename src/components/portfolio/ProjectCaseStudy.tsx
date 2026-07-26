@@ -27,6 +27,25 @@ function CaseStudyVisual({ visual }: { visual: ProjectCaseStudyVisual }) {
     );
   }
 
+  if (visual.kind === "gallery") {
+    return (
+      <div className="case-study-visual case-study-gallery">
+        {visual.images.map((item) => (
+          <div className="case-study-gallery-item" key={item.src}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={item.src}
+              alt={item.alt}
+              width={1200}
+              height={1600}
+              data-fit={item.fit ?? "contain"}
+            />
+          </div>
+        ))}
+      </div>
+    );
+  }
+
   if (visual.kind === "flow") {
     return (
       <div className="case-study-visual case-study-system-visual">
@@ -68,7 +87,10 @@ export function ProjectCaseStudy({
       aria-label={locale === "en" ? `${projectTitle} case study` : `${projectTitle} 项目案例`}
     >
       {sections.map((section) => (
-        <figure key={section.step} className="project-case-study-card">
+        <figure
+          key={section.step}
+          className={`project-case-study-card${section.layout === "wide" ? " project-case-study-card--wide" : ""}`}
+        >
           <CaseStudyVisual visual={section.visual} />
           <figcaption>
             <span>{section.step}</span>
