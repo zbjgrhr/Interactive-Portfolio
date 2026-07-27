@@ -72,48 +72,17 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
       },
       {
         step: "02",
-        title: "Ten agents work as one visible studio",
-        body: "Director, Narrative, Mechanics, Art Director, Level Designer, Integrator, Consistency Critic, Engine QA, Revision, and Asset Coordinator run as a visible cluster. Each specialist exposes status, reasoning, structured output, and review progress instead of disappearing inside one long prompt.",
+        title: "A compact agent studio reviews the world before generation",
+        body: "Ten specialist agents divide planning and review behind one clear progress surface. Conflicts stay visible, failed tasks can retry independently, and creator approval remains the gate before generation—enough control to trust the workflow without making the agent system the product's main story.",
         visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-agent-studio.png",
-              alt: "Pixel World Agent Studio showing ten specialist agents in progress",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-agent-review.png",
-              alt: "Completed narrative agent review alongside the remaining specialist agents",
-              fit: "contain",
-            },
-          ],
+          kind: "image",
+          src: "/portfolio/pixel-world-v5-agent-studio.png",
+          alt: "Pixel World Agent Studio summarizing ten specialist agents, review progress, and recoverable task states",
+          fit: "contain",
         },
-        layout: "wide",
       },
       {
         step: "03",
-        title: "Cross-review catches conflicts without restarting the run",
-        body: "Agents review one another against the same engine contract. Blocking failures remain explicit, optional improvements remain optional, and a failed task can be retried independently while completed work stays intact. The creator receives a decision surface—not a mysterious final answer.",
-        visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-agent-recovery.png",
-              alt: "Pixel World Agent Studio showing a local agent failure and independent recovery path",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-engine-qa.png",
-              alt: "Pixel World engine QA output separating validated constraints from optional recommendations",
-              fit: "contain",
-            },
-          ],
-        },
-        layout: "wide",
-      },
-      {
-        step: "04",
         title: "Choose intelligence, cost, and region in the open",
         body: "Eight image-provider routes and three direct Agent platforms expose model strengths, pricing patterns, credentials, and regional limits. Text reasoning and image generation stay separable, while each project locks one visual model so dozens of assets still belong to the same world.",
         visual: {
@@ -131,31 +100,21 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
             },
           ],
         },
-        layout: "wide",
       },
       {
-        step: "05",
-        title: "An approved GameSpec becomes a recoverable generation plan",
-        body: "After creator approval, the specification expands into editable asset cards, per-level assignments, reusable action sets, sound and behavior rules, and a parallel generation queue. The project can generate many tasks through one locked model, preserve completed items, and retry only what needs repair.",
+        step: "04",
+        title: "One approved world expands into any number of levels",
+        body: "After creator approval, the GameSpec expands into editable asset cards, reusable action sets, sound and behavior rules, and assignments for however many levels the creator requests. The complete workspace below shows the brief, theme library, generated characters, enemies, effects, audio, and level-aware asset system together—not a preset campaign structure.",
         visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-parallel-generation.png",
-              alt: "Pixel World generating dozens of selected assets through a four-way parallel queue",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-level-assets.png",
-              alt: "Successfully generated level backgrounds, music, and effects assigned to individual game levels",
-              fit: "contain",
-            },
-          ],
+          kind: "image",
+          src: "/portfolio/pixel-world-v5-asset-system.png",
+          alt: "Complete Pixel World workspace showing the creative brief, theme library, generated gameplay assets, enemies, effects, audio, and per-level assignments",
+          fit: "contain",
         },
         layout: "wide",
       },
       {
-        step: "06",
+        step: "05",
         title: "The generated game takes over the product’s cover",
         body: "Once a new world is created, its own game cover and background replace the default Pixel World hero image. The builder stops looking like a static tool and becomes a living archive of the world currently being made—bright, specific, and immediately recognizable.",
         visual: {
@@ -167,7 +126,7 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         layout: "wide",
       },
       {
-        step: "07",
+        step: "06",
         title: "Playable—not merely generated—is the quality bar",
         body: "The same approved contract drives the custom 2D runtime: player actions, melee and ranged combat, enemies, collectibles, collision, level rules, HUD, music, and touch controls. The result is a game the creator can enter, not a folder of attractive but disconnected images.",
         visual: {
@@ -179,19 +138,19 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         layout: "wide",
       },
       {
-        step: "08",
-        title: "Creative rules survive a second act and a boss",
-        body: "Levels can carry distinct backgrounds, music, weather, effects, enemies, pacing, and narrative reversals while sharing one coherent visual language. Darabangba proves the range with a bright fairy-tale opening, melee and ranged play, collectibles, escalating enemies, and a final Prince boss.",
+        step: "07",
+        title: "Any number of levels. Any structure. Any kind of play.",
+        body: "Darabangba is one generated example, not a fixed campaign template. A creator can request a single-scene experience, a long sequential campaign, branching routes, a boss-only arena, puzzle and exploration spaces, combat stages, or a hybrid of them. Every level can define its own background, music, weather, effects, enemies, objectives, movement rules, and pacing while the system preserves one coherent world.",
         visual: {
           kind: "image",
           src: "/portfolio/pixel-world-v5-gameplay-boss.png",
-          alt: "Completed second level and final boss battle in the generated Darabangba game",
+          alt: "A generated Pixel World level demonstrating that creators can define different structures, objectives, enemies, and play styles",
           fit: "cover",
         },
         layout: "wide",
       },
       {
-        step: "09",
+        step: "08",
         title: "Save it locally. Carry it away.",
         body: "The workflow ends in ownership: the creator can test the campaign, save and reload it locally, reopen the generated world, and export a playable offline ZIP. Prompt-to-game is complete only when the result survives the browser session and can leave the platform.",
         visual: {
@@ -227,48 +186,17 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
       },
       {
         step: "02",
-        title: "十个 Agent，组成一间看得见的工作室",
-        body: "总控、叙事、玩法、美术总监、关卡设计、规格整合、一致性评审、引擎检查、修订与素材统筹以集群方式协作。每个 Agent 的状态、推理、结构化结果与评审进度都能被看见，不再藏在一条冗长提示词背后。",
+        title: "精简的 Agent 工作室，先复核再生成",
+        body: "十个专业 Agent 在同一进度界面内分工规划与复核；冲突保持可见，失败任务可以单独重试，真正生成前仍由创作者批准。它提供足够可信的控制，但不再占据项目叙事的中心。",
         visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-agent-studio.png",
-              alt: "Pixel World Agent Studio 中十个专业 Agent 的运行状态",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-agent-review.png",
-              alt: "完成的叙事 Agent 评审与其余专业 Agent 列表",
-              fit: "contain",
-            },
-          ],
+          kind: "image",
+          src: "/portfolio/pixel-world-v5-agent-studio.png",
+          alt: "Pixel World Agent Studio 汇总十个专业 Agent、复核进度与可恢复任务状态",
+          fit: "contain",
         },
-        layout: "wide",
       },
       {
         step: "03",
-        title: "交叉评审发现冲突，但不让整条流程重来",
-        body: "各个 Agent 围绕同一份引擎契约彼此复核：阻断问题明确显示，可选改进依然保持可选；单个任务失败时可以独立重试，已完成结果不会丢失。创作者面对的是清楚的决策界面，而不是一个来历不明的最终答案。",
-        visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-agent-recovery.png",
-              alt: "Pixel World Agent Studio 中局部失败与独立恢复入口",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-engine-qa.png",
-              alt: "Pixel World 引擎 QA 将已验证约束与可选建议分开显示",
-              fit: "contain",
-            },
-          ],
-        },
-        layout: "wide",
-      },
-      {
-        step: "04",
         title: "把智能、成本与地区选择放到明处",
         body: "8 条图片平台路线与 3 个 Agent 直连平台会说明模型优势、计费特征、密钥格式与地区限制。文字推理与图片生成可以分别选择，同时每个项目锁定统一视觉模型，让几十项素材仍然像属于同一个世界。",
         visual: {
@@ -286,31 +214,21 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
             },
           ],
         },
-        layout: "wide",
       },
       {
-        step: "05",
-        title: "获批 GameSpec，展开为可恢复的生成计划",
-        body: "创作者批准后，规格会展开成可编辑素材卡、逐关分配、可复用动作、音效与行为规则，以及并行生成队列。项目通过一套锁定模型批量生产，保存已完成素材，只重试真正需要修复的部分。",
+        step: "04",
+        title: "一个获批世界，可以展开成任意数量的关卡",
+        body: "创作者批准后，GameSpec 会展开成可编辑素材卡、可复用动作、音效与行为规则，并按创作者要求分配到任意数量的关卡。下方完整工作区同时展示创意简报、主题库、已生成角色、敌人、特效、音频与关卡素材系统，而不是预设的关卡结构。",
         visual: {
-          kind: "gallery",
-          images: [
-            {
-              src: "/portfolio/pixel-world-v5-parallel-generation.png",
-              alt: "Pixel World 以四路并行队列批量生成已选择素材",
-              fit: "contain",
-            },
-            {
-              src: "/portfolio/pixel-world-v5-level-assets.png",
-              alt: "成功生成并分配至独立关卡的背景、音乐与特效素材",
-              fit: "contain",
-            },
-          ],
+          kind: "image",
+          src: "/portfolio/pixel-world-v5-asset-system.png",
+          alt: "Pixel World 完整工作区：创意简报、主题库、生成后的战斗素材、敌人、特效、音频与逐关分配同时可见",
+          fit: "contain",
         },
         layout: "wide",
       },
       {
-        step: "06",
+        step: "05",
         title: "新游戏生成后，作品封面接管产品首页",
         body: "一个新世界完成后，它自己的游戏封面与背景会替换 Pixel World 默认的顶部主视觉。创作工具因此不再像一张静态表单，而会变成正在制作的世界本身：鲜亮、有辨识度，也让每次生成都拥有独特的第一印象。",
         visual: {
@@ -322,7 +240,7 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         layout: "wide",
       },
       {
-        step: "07",
+        step: "06",
         title: "质量标准不是生成完成，而是真正可玩",
         body: "同一份获批契约继续驱动自研 2D 运行时：角色动作、近战与远程、敌人、收集品、碰撞、关卡规则、HUD、音乐与触控操作。最终结果是创作者能够走进去的游戏，而不是一组好看却彼此断开的图片。",
         visual: {
@@ -334,19 +252,19 @@ export const projectCaseStudies: Record<ProjectId, LocalizedCaseStudy> = {
         layout: "wide",
       },
       {
-        step: "08",
-        title: "创意规则经得住第二幕与最终 Boss",
-        body: "每关可以拥有不同背景、音乐、天气、特效、敌人、节奏与剧情反转，同时维持统一画风。《达拉崩吧》以明亮童话开场，组合近战、远程、收集与逐步升级的敌人，并在第二关进入王子 Boss 战。",
+        step: "07",
+        title: "关卡数量与玩法形式，都由创意决定",
+        body: "《达拉崩吧》只是一次生成结果，并不是固定的关卡模板。创作者可以定义单场景体验、长篇连续世界、分支路线、纯 Boss 关、解谜与探索空间、战斗关卡，或它们的混合形式。每关都能拥有独立背景、音乐、天气、特效、敌人、目标、移动规则与节奏，同时保持统一世界观与画风。",
         visual: {
           kind: "image",
           src: "/portfolio/pixel-world-v5-gameplay-boss.png",
-          alt: "生成游戏第二关中已经完成的最终王子 Boss 战",
+          alt: "Pixel World 生成关卡示例，展示创作者可自由定义结构、目标、敌人与玩法形式",
           fit: "cover",
         },
         layout: "wide",
       },
       {
-        step: "09",
+        step: "08",
         title: "保存在本地，也把完整游戏带走",
         body: "工作流最终交付的是所有权：创作者可以试玩、在本地保存与载入、重新打开生成世界，并导出可离线运行的 ZIP。只有当结果能够离开当前浏览器会话，Prompt 到完整游戏的链条才真正闭合。",
         visual: {

@@ -11,7 +11,7 @@ describe("project case studies", () => {
     for (const projectId of caseStudyProjectIds) {
       for (const locale of ["en", "zh"] as const) {
         const sections = projectCaseStudies[projectId][locale];
-        const expectedCount = projectId === "pixel-seed" ? 9 : 4;
+        const expectedCount = projectId === "pixel-seed" ? 8 : 4;
         expect(sections).toHaveLength(expectedCount);
         expect(sections.map((section) => section.step)).toEqual(
           Array.from({ length: expectedCount }, (_, index) =>
@@ -72,6 +72,9 @@ describe("project case studies", () => {
         );
 
       expect(imagePaths).not.toHaveLength(0);
+      expect(imagePaths).toContain(
+        "/portfolio/pixel-world-v5-asset-system.png",
+      );
       expect(imagePaths.every((src) => src.includes("pixel-world-v5-"))).toBe(
         true,
       );

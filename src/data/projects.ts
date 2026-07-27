@@ -59,12 +59,12 @@ export const projects: ProjectArchive[] = [
       "Turning generated rules and assets into a stable keyboard-and-touch runtime that still works after ZIP export",
     ],
     outcome:
-      "A live prompt-to-game product that turns an approved creative premise into a reviewed specification, recoverable generation plan, visually coherent world, adaptive product cover, playable campaign, local save, and downloadable offline game. The new Darabangba project demonstrates a bright two-level inverted fairy tale with distinct scenes, melee and ranged combat, collectibles, and a final Prince boss.",
+      "A live prompt-to-game product that turns an approved creative premise into a reviewed specification, recoverable generation plan, visually coherent world, adaptive product cover, playable campaign, local save, and downloadable offline game. Darabangba is one vivid generated example; the same system accepts creator-defined level counts, structures, objectives, and play styles rather than imposing a fixed campaign template.",
     screenshots: [
-      "/portfolio/pixel-world-v5-generated-cover.png",
+      "/portfolio/pixel-world-v5-platform-overview.png",
+      "/portfolio/pixel-world-v5-asset-system.png",
       "/portfolio/pixel-world-v5-dynamic-home.png",
       "/portfolio/pixel-world-v5-agent-studio.png",
-      "/portfolio/pixel-world-v5-parallel-generation.png",
       "/portfolio/pixel-world-v5-gameplay-level-1.png",
       "/portfolio/pixel-world-v5-gameplay-boss.png",
     ],

@@ -193,8 +193,8 @@ export const GAME_LEVELS: GameLevel[] = [
     environment: "pixel-world",
     accent: "#f472b6",
     accentNumber: 0xf472b6,
-    cover: "/portfolio/pixel-world-v5-generated-cover.png",
-    mechanic: t("Agent relay · world transformation · boss cadence", "Agent 接力 · 世界变形 · Boss 节拍"),
+    cover: "/portfolio/pixel-world-v5-platform-overview.png",
+    mechanic: t("Creative brief · any-level generation · playable delivery", "创意简报 · 任意关卡生成 · 可玩交付"),
     narrative: [
       t("A story becomes a production contract without losing its strange, human premise.", "故事被整理成生产契约，却不会丢掉原本古怪而真实的创意。"),
       t("Ten agents divide the work, cross-review it, and expose every conflict before generation.", "十个 Agent 分工、互审，并在生成前把每个冲突摆到明处。"),
@@ -213,10 +213,10 @@ export const GAME_LEVELS: GameLevel[] = [
       },
       {
         eyebrow: t("02 / TEN AGENTS → REVIEW", "02 / 十个 Agent → 互审"),
-        title: t("A visible cluster, not one opaque prompt", "一个可见集群，而不是一条黑箱提示词"),
+        title: t("A compact review studio, not an opaque prompt", "一间精简复核工作室，而不是黑箱提示词"),
         body: t(
-          "Direction, narrative, mechanics, art, levels, integration, consistency, engine QA, revision, and asset coordination work in parallel, review one another, and retry locally when needed.",
-          "总控、叙事、玩法、美术、关卡、整合、一致性、引擎检查、修订与素材统筹并行协作、彼此复核，并在需要时局部重试。",
+          "Ten specialists divide planning and review behind one visible progress surface; conflicts stay inspectable and failed tasks can retry without restarting completed work.",
+          "十个专业角色在同一进度界面中分工规划与复核；冲突可检查，失败任务可局部重试，不必推倒已完成工作。",
         ),
         image: "/portfolio/pixel-world-v5-agent-studio.png",
       },
@@ -227,14 +227,14 @@ export const GAME_LEVELS: GameLevel[] = [
           "Approved rules expand into a recoverable parallel asset queue. Once complete, the generated cover replaces the generic homepage, turning the builder into a living entrance to that specific world.",
           "获批规则会展开为可恢复的并行素材队列；完成后，生成封面会替换通用首页，让创作器成为这个独特世界的真实入口。",
         ),
-        image: "/portfolio/pixel-world-v5-generated-cover.png",
+        image: "/portfolio/pixel-world-v5-asset-system.png",
       },
       {
         eyebrow: t("04 / WORLD → OWNED GAME", "04 / 世界 → 属于你的游戏"),
-        title: t("Play it, save it, beat the boss, take it home", "游玩、存档、击败 Boss，再把它带走"),
+        title: t("Define any campaign, play it, and take it home", "定义任意关卡结构，游玩后把它带走"),
         body: t(
-          "Darabangba proves the complete chain with bright distinct levels, melee and ranged combat, collectibles, a final Prince boss, local save/load, and a downloadable offline ZIP.",
-          "《达拉崩吧》以鲜亮且不同的关卡、近战与远程、收集品、最终王子 Boss、本地存档载入和可下载离线 ZIP，验证了完整链路。",
+          "Darabangba is one generated example. The same chain accepts creator-defined level counts, sequential or branching structures, different objectives and play styles, local save/load, and a downloadable offline ZIP.",
+          "《达拉崩吧》只是一次生成示例；同一链路支持创作者自定义关卡数量、连续或分支结构、不同目标与玩法，并提供本地存档载入和可下载离线 ZIP。",
         ),
         image: "/portfolio/pixel-world-v5-gameplay-boss.png",
       },

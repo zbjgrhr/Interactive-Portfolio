@@ -53,7 +53,7 @@
         "Maintaining visual consistency while preserving item-level retry and level assignment",
         "Keeping the generated game stable after save, load, and ZIP export"
       ],
-      "outcome": "A live prompt-to-game product that moves from an approved premise to a reviewed specification, recoverable generation plan, adaptive product cover, playable campaign, local save, and downloadable offline game. Darabangba demonstrates bright distinct levels, melee and ranged combat, collectibles, and a final Prince boss.",
+      "outcome": "A live prompt-to-game product that moves from an approved premise to a reviewed specification, recoverable generation plan, adaptive product cover, playable campaign, local save, and downloadable offline game. Darabangba is one generated example; the same system supports creator-defined level counts, structures, objectives, and play styles.",
       "learned": [
         "Multi-agent systems become useful when responsibility, review order, failure, and creator approval are visible",
         "Model choice is a product decision involving style, cost, region, and recovery",
@@ -61,12 +61,12 @@
         "The product itself can come alive when the generated world's cover becomes its interface",
         "A generated world is complete only when it survives play, local persistence, and delivery"
       ],
-      "coverSrc": "/portfolio/pixel-world-v5-generated-cover.png",
+      "coverSrc": "/portfolio/pixel-world-v5-platform-overview.png",
       "gallery": [
-        "/portfolio/pixel-world-v5-generated-cover.png",
+        "/portfolio/pixel-world-v5-platform-overview.png",
+        "/portfolio/pixel-world-v5-asset-system.png",
         "/portfolio/pixel-world-v5-dynamic-home.png",
         "/portfolio/pixel-world-v5-agent-studio.png",
-        "/portfolio/pixel-world-v5-parallel-generation.png",
         "/portfolio/pixel-world-v5-gameplay-level-1.png",
         "/portfolio/pixel-world-v5-gameplay-boss.png"
       ],
