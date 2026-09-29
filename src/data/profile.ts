@@ -39,86 +39,86 @@ interface ProfileCopy {
 
 const profileCopy: Record<Locale, ProfileCopy> = {
   en: {
-    role: "Game Designer × AI Product Builder",
-    headline: "I design worlds, rules, and AI workflows people can actually enter.",
+    role: "Game Design × AI Products",
+    headline: "I design worlds, rules, and AI workflows—and make them places people can truly enter.",
     summary:
-      "My projects move from narrative and level design to multi-agent creation systems and browser tools. I care about the moment an invisible system becomes playable, legible, and useful to someone outside the team that built it.",
-    proofLabel: "Evidence in the work",
-    experienceLabel: "Selected experience",
+      "What matters to me is whether a project can be played, understood, and used by people beyond the team that built it.",
+    proofLabel: "Evidence in the Work",
+    experienceLabel: "Selected Experience",
     experienceIntro:
-      "Cultural products, community operations, and media production ground the independent games and AI systems in real audiences and delivery constraints.",
-    availability: "Open to game design, AI product, and interactive experience opportunities.",
-    focus: "Game systems · AI product design · Interactive prototyping · User research",
-    capabilityLabel: "One practice, four lenses",
+      "My experience in cultural products, community operations, and media production keeps my independent games and AI systems grounded in real audiences, real collaboration, and real delivery constraints.",
+    availability: "Open to opportunities in game design, AI products, and interactive experiences.",
+    focus: "Game Systems · AI Product Design · Interactive Prototyping · User Research",
+    capabilityLabel: "One Practice, Four Perspectives",
     capabilityIntro:
-      "I connect game design and product thinking through working prototypes. Research, systems, and audience operations support the same goal: experiences that communicate through use.",
+      "I connect game design and product thinking through working prototypes. Research, systems implementation, and user operations all serve one goal: letting the work speak for itself in use.",
     capabilities: [
-      { title: "Game Design", skills: ["Systems design", "Level design", "Narrative design", "Boss patterns", "Balancing", "Playtesting"] },
-      { title: "AI Products", skills: ["Multi-agent workflows", "Product architecture", "Prompt systems", "Provider routing", "Human approval", "Evaluation"] },
-      { title: "Interactive Build", skills: ["GameMaker / GML", "Next.js", "TypeScript", "Browser extensions", "Local-first data", "Static delivery"] },
-      { title: "Audience Insight", skills: ["User interviews", "Surveys", "Community operations", "Event design", "Content planning", "Iteration"] },
+      { title: "Game Design", skills: ["Systems Design", "Level Design", "Narrative Design", "Boss Mechanics", "Balance", "Playtest Iteration"] },
+      { title: "AI Products", skills: ["Multi-Agent Workflows", "Product Architecture", "Prompt Systems", "Model Routing", "Human Approval", "Evaluation"] },
+      { title: "Interactive Development", skills: ["GameMaker / GML", "Next.js", "TypeScript", "Browser Extensions", "Local Data", "Static Deployment"] },
+      { title: "Users & Market", skills: ["User Interviews", "Surveys", "Community Operations", "Event Planning", "Content Planning", "Iterative Validation"] },
     ],
     experiences: [
       {
-        organization: "Gansu Jiandu Museum",
-        role: "Digital exhibition and cultural product support",
+        organization: "Gansu Bamboo Slips Museum",
+        role: "Digital Exhibitions & Cultural Product Support",
         period: "2022.12–2023.11",
         location: "Gansu, China",
         summary:
-          "Worked across digital exhibitions, artefact storytelling, interaction delivery, and cultural-product ideation for a public cultural institution.",
+          "At a public cultural institution, I contributed to digital exhibitions, artifact storytelling, interactive delivery, and cultural-product concepts.",
         evidence: [
-          "Supported online exhibition content and interaction delivery",
-          "Contributed to an award-recognized exhibition project",
-          "Designed three sticker packs; the most-used set reached 6,000+ downloads",
+          "Supported the content and interactive launch of online exhibitions",
+          "Contributed to an award-winning exhibition project",
+          "Designed three sticker packs; the most popular surpassed 6,000 downloads",
         ],
       },
       {
         organization: "Social Dubai",
-        role: "Community operations and event design",
+        role: "Community Operations & Event Planning",
         period: "2023–2024",
         location: "Dubai, UAE",
         summary:
-          "Built and operated Chinese-language communities around local social activity, events, and merchant collaboration.",
+          "Built and operated Chinese-speaking communities around local social life, events, and merchant partnerships.",
         evidence: [
-          "Operated three communities with 700+ members",
-          "Planned and delivered 30+ offline activities, with peak attendance above 80",
-          "Built a Xiaohongshu audience of about 1,000 and coordinated 10+ merchant collaborations",
+          "Operated three communities reaching more than 700 members",
+          "Planned and delivered over 30 offline events, with peak attendance above 80",
+          "Grew a Xiaohongshu audience to about 1,000 followers and completed more than 10 merchant collaborations",
         ],
       },
       {
         organization: "Gansu Television",
-        role: "Program planning and new-media operations",
+        role: "Program Planning & New Media Operations",
         period: "2021.08–2022.04",
         location: "Gansu, China",
         summary:
-          "Supported program planning, content production, and channel operations in a broadcast-media environment.",
+          "Contributed to program development, content production, and channel operations in a broadcast environment.",
         evidence: [
-          "Participated in topic planning and production coordination",
-          "Adapted stories and promotional material for new-media distribution",
-          "Worked across editorial, production, and release timelines",
+          "Supported topic development and production coordination",
+          "Adapted program content and promotional assets for new-media channels",
+          "Coordinated across editorial, production, and release timelines",
         ],
       },
     ],
-    timelineLabel: "Additional practice",
+    timelineLabel: "Additional Experience",
     timeline: [
-      { period: "2023.11–2024.08", title: "YEE AU CARRÉ DMCC · HR Specialist", detail: "Recruitment, employee coordination, and cross-cultural operations in Dubai." },
-      { period: "2023–2026", title: "Independent cruise and fishing services", detail: "Lead generation, customer conversion, service coordination, and unit-economics practice in the UAE." },
+      { period: "2023.11–2024.08", title: "YEE AU CARRÉ DMCC · HR Specialist", detail: "Managed recruitment, employee coordination, and cross-cultural operations in Dubai." },
+      { period: "2023–2026", title: "Independent Yacht & Sea-Fishing Service", detail: "Managed customer acquisition, conversion, service coordination, and per-booking profit calculations in the UAE." },
     ],
   },
   zh: {
     role: "游戏策划 × AI 产品",
     headline: "我设计世界、规则和 AI 工作流，也让人真正走进去。",
     summary:
-      "我的项目从叙事与关卡设计延伸到多 Agent 创作系统和浏览器工具。比起只解释一个系统，我更在意它何时真正变得可玩、可理解，也能被团队以外的人使用。",
+      "我更在意作品能不能被玩起来、被看懂，也能被团队之外的人用上。",
     proofLabel: "作品中的证据",
     experienceLabel: "精选经历",
     experienceIntro:
-      "文化产品、社群运营与媒体制作，让独立游戏和 AI 系统始终面对真实受众、协作关系与交付约束。",
+      "文化产品、社群运营和媒体制作的经历，让我的独立游戏和 AI 系统始终面对真实受众、协作关系和交付约束。",
     availability: "关注游戏策划、AI 产品与互动体验相关机会。",
     focus: "游戏系统 · AI 产品设计 · 互动原型 · 用户研究",
     capabilityLabel: "一条实践，四个观察角度",
     capabilityIntro:
-      "我用可运行原型连接游戏策划与产品思维；研究、系统实现和用户运营都服务于同一件事：让体验通过使用本身完成表达。",
+      "我用可运行原型连接游戏策划与产品思维；研究、系统实现和用户运营，都指向同一件事：让作品在使用中自己说话。",
     capabilities: [
       { title: "游戏策划", skills: ["系统设计", "关卡设计", "叙事设计", "Boss 机制", "数值平衡", "试玩迭代"] },
       { title: "AI 产品", skills: ["多 Agent 工作流", "产品架构", "提示系统", "模型路由", "人工审批", "效果评估"] },
@@ -131,8 +131,8 @@ const profileCopy: Record<Locale, ProfileCopy> = {
         role: "数字展览与文化产品支持",
         period: "2022.12–2023.11",
         location: "甘肃，中国",
-        summary: "在公共文化机构中参与数字展览、文物叙事、互动交付与文创构想。",
-        evidence: ["支持线上展览内容与交互上线", "参与获奖展览项目", "设计三套表情包，其中使用最高的一套下载量超过 6,000"],
+        summary: "在公共文化机构参与数字展览、文物叙事、互动交付，也做过文创构想。",
+        evidence: ["支持线上展览内容与交互上线", "参与获奖展览项目", "设计三套表情包，其中下载量最高的一套超过 6,000 次"],
       },
       {
         organization: "Social Dubai",

@@ -51,10 +51,10 @@ export function ExploreView() {
           <div className="explore-actions">
             <Link href="/play" className="btn-primary portfolio-hero-play" onClick={() => setMode("entry")}>
               <span aria-hidden>▶</span>
-              {locale === "en" ? "Play the rhythm portfolio" : "进入节奏作品集"}
+              {locale === "en" ? "Play the Portfolio" : "进入演奏作品集"}
             </Link>
             <a className="btn-primary" href="#work">
-              {locale === "en" ? "View selected work" : "查看精选作品"}
+              {locale === "en" ? "View Selected Work" : "查看精选作品"}
             </a>
             <a className="btn-secondary" href={publicLinks.github} target="_blank" rel="noreferrer">
               GitHub ↗
@@ -77,24 +77,24 @@ export function ExploreView() {
               <dd>{profile.focus}</dd>
             </div>
             <div>
-              <dt>{locale === "en" ? "Based" : "所在地"}</dt>
-              <dd>{locale === "en" ? "China · Open to global opportunities" : "中国 · 接受全球机会"}</dd>
+              <dt>{locale === "en" ? "Location" : "所在地"}</dt>
+              <dd>{locale === "en" ? "China · Open to Global Opportunities" : "中国 · 接受全球机会"}</dd>
             </div>
           </dl>
         </div>
       </section>
 
-      <section className="rhythm-invitation" aria-label={locale === "en" ? "Interactive portfolio invitation" : "互动作品集邀请"}>
+      <section className="rhythm-invitation" aria-label={locale === "en" ? "Enter the Interactive Portfolio" : "进入互动作品集"}>
         <div className="rhythm-invitation-score" aria-hidden>
           {Array.from({ length: 12 }, (_, index) => <i key={index} style={{ height: `${18 + (index % 5) * 11}px` }} />)}
         </div>
         <div>
           <p>INTERACTIVE MODE / 互动模式</p>
-          <h2>{locale === "en" ? "Don’t just read the projects. Perform them." : "不只阅读项目，也亲自演奏它们。"}</h2>
+          <h2>{locale === "en" ? "Don’t just read the projects—play them." : "不只阅读项目，也亲自演奏它们。"}</h2>
           <span>{locale === "en" ? "Five projects · Five arrangements · Every level unlocked" : "五个项目 · 五种编曲 · 全部关卡开放"}</span>
         </div>
         <Link href="/play" className="rhythm-invitation-button" onClick={() => setMode("entry")}>
-          <span>{locale === "en" ? "ENTER THE GAME" : "进入游戏"}</span>
+          <span>{locale === "en" ? "Play the Portfolio" : "进入演奏作品集"}</span>
           <i aria-hidden>▶</i>
         </Link>
       </section>
@@ -102,7 +102,7 @@ export function ExploreView() {
       <section className="proof-strip" aria-label={profile.proofLabel}>
         <div><strong>5</strong><span>{locale === "en" ? "featured projects" : "个重点项目"}</span></div>
         <div><strong>2</strong><span>{locale === "en" ? "playable game worlds" : "组可玩游戏世界"}</span></div>
-        <div><strong>10</strong><span>{locale === "en" ? "agents in one workflow" : "个 Agent 协作"}</span></div>
+        <div><strong>10</strong><span>{locale === "en" ? "collaborating agents" : "个 Agent 协作"}</span></div>
         <div><strong>CN / EN</strong><span>{locale === "en" ? "bilingual communication" : "双语沟通"}</span></div>
       </section>
 
@@ -194,7 +194,7 @@ export function ExploreView() {
                 </div>
 
                 <details className="project-details">
-                  <summary>{locale === "en" ? "Process, decisions, and technology" : "过程、决策与技术"}</summary>
+                  <summary>{locale === "en" ? "Process, Decisions & Technology" : "过程、决策与技术"}</summary>
                   <div className="project-details-grid">
                     <div>
                       <h4>{content.archive.process}</h4>
@@ -211,7 +211,7 @@ export function ExploreView() {
                 <div className="project-links">
                   {project.liveDemo && (
                     <a href={project.liveDemo} target="_blank" rel="noreferrer">
-                      {locale === "en" ? "View live project ↗" : "查看线上成品 ↗"}
+                      {locale === "en" ? "View Live Project ↗" : "查看线上成品 ↗"}
                     </a>
                   )}
                   {project.github && <a href={project.github} target="_blank" rel="noreferrer">GitHub ↗</a>}
@@ -265,12 +265,12 @@ export function ExploreView() {
       <section className="contact-section" id="contact" aria-labelledby="contact-heading">
         <p className="section-index">03 / {content.explore.contact}</p>
         <h2 id="contact-heading">
-          {locale === "en" ? "Let’s turn a difficult idea into a clear experience." : "让一个复杂想法，变成清晰可用的体验。"}
+          {locale === "en" ? "Turn a complex idea into a clear, usable product." : "让一个复杂想法，变成清晰可用的作品。"}
         </h2>
         <p>{profile.availability}</p>
         <div className="contact-links">
           <Link className="btn-primary" href="/play" onClick={() => setMode("entry")}>
-            {locale === "en" ? "Play the portfolio" : "演奏作品集"}
+            {locale === "en" ? "Play the Portfolio" : "演奏作品集"}
           </Link>
           <a className="btn-primary" href={`mailto:${publicLinks.email}`}>{publicLinks.email}</a>
           <a className="btn-secondary" href={publicLinks.github} target="_blank" rel="noreferrer">GitHub ↗</a>
@@ -292,20 +292,20 @@ export function ExploreView() {
             <button
               type="button"
               className="wechat-close"
-              aria-label={locale === "en" ? "Close WeChat contact" : "关闭微信联系方式"}
+              aria-label={locale === "en" ? "Close WeChat Contact" : "关闭微信联系方式"}
               onClick={() => setShowWechat(false)}
             >
               ×
             </button>
-            <p className="section-index">WECHAT / 微信</p>
-            <h2 id="wechat-title">{locale === "en" ? "Let’s continue on WeChat." : "也可以在微信继续聊。"}</h2>
+            <p className="section-index">WeChat / 微信</p>
+            <h2 id="wechat-title">{locale === "en" ? "We can also continue the conversation on WeChat." : "也可以在微信继续聊。"}</h2>
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/contact/wechat-qr.jpg" alt={locale === "en" ? "Huaxin Zhang WeChat QR code" : "张铧心微信二维码"} width={800} height={1067} />
+            <img src="/contact/wechat-qr.jpg" alt={locale === "en" ? "Huaxin Zhang’s WeChat QR Code" : "张铧心微信二维码"} width={800} height={1067} />
             <div className="wechat-id">
               <span>{locale === "en" ? "WeChat ID" : "微信号"}</span>
               <strong>yuelaiyuehao86768</strong>
             </div>
-            <p>{locale === "en" ? "Scan the code or search the ID above." : "扫描二维码，或搜索上方微信号添加好友。"}</p>
+            <p>{locale === "en" ? "Scan the QR code or search the WeChat ID above to add me." : "扫描二维码，或搜索上方微信号添加好友。"}</p>
           </section>
         </div>
       )}

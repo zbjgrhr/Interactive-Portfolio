@@ -92,7 +92,7 @@ export function ArchivePanel() {
             </ul>
           </Section>
           {project.screenshots.length > 1 && (
-            <Section title={locale === "en" ? "Gallery" : "项目画面"}>
+            <Section title={locale === "en" ? "Project Visual" : "项目画面"}>
               <div className="admin-gallery">
                 {project.screenshots.map((src) => (
                   // eslint-disable-next-line @next/next/no-img-element
@@ -110,7 +110,7 @@ export function ArchivePanel() {
               )}
               {project.liveDemo && (
                 <a href={project.liveDemo} target="_blank" rel="noreferrer">
-                  {locale === "en" ? "View live project" : "查看线上成品"}
+                  {locale === "en" ? "View Live Project" : "查看线上成品"}
                 </a>
               )}
               {!project.github && !project.liveDemo && (

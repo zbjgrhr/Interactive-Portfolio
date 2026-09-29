@@ -36,42 +36,42 @@ export function ModalLayers() {
           aria-labelledby="howto-title"
           onMouseDown={(event) => event.stopPropagation()}
         >
-          <ModalClose onClick={close} label={locale === "en" ? "Close instructions" : "关闭玩法说明"} />
+          <ModalClose onClick={close} label={locale === "en" ? "Close Instructions" : "关闭玩法说明"} />
           <p className="game-modal-kicker">HOW TO PLAY / 如何游玩</p>
           <h2 id="howto-title">
-            {locale === "en" ? "Find the pulse, then let your fingers land." : "先听见节拍，再让手指落下。"}
+            {locale === "en" ? "Hear the beat, then let your fingers fall." : "先听见节拍，再让手指落下。"}
           </h2>
           <p className="game-modal-lead">
             {locale === "en"
-              ? "Use the keyboard or click the five piano keys. Each lane belongs to one key, so there is no character movement to manage."
+              ? "Use either the keyboard or mouse. The five lanes are five piano keys—there is no separate character movement."
               : "键盘和鼠标都可以。五条轨道就是五枚琴键，不需要另外控制角色移动。"}
           </p>
-          <div className="howto-keys" aria-label={locale === "en" ? "Rhythm controls" : "节奏按键"}>
+          <div className="howto-keys" aria-label={locale === "en" ? "Rhythm keys—use the keyboard or click with the mouse" : "节奏按键，可用键盘或鼠标点击"}>
             {KEYS.map((key) => <kbd key={key} data-wide={key === "SPACE"}>{key}</kbd>)}
           </div>
           <div className="howto-steps">
             <HowToStep
               number="01"
-              title={locale === "en" ? "Match a lane" : "看准轨道"}
-              body={locale === "en" ? "Tap its key—or click the matching piano key—as the note reaches the line." : "音符抵达判定线时，按下对应按键，或直接点击同一轨道的琴键。"}
+              title={locale === "en" ? "Watch the Lane" : "看准轨道"}
+              body={locale === "en" ? "When a note reaches the judgment line, press its matching key or click the piano key in the same lane." : "音符抵达判定线时，按下对应按键，或直接点击同一轨道的琴键。"}
             />
             <HowToStep
               number="02"
-              title={locale === "en" ? "Hold the long notes" : "长音要按住"}
-              body={locale === "en" ? "Keep the key down until the glowing tail has passed." : "看见发光的长尾时，持续按住琴键，直到尾部通过。"}
+              title={locale === "en" ? "Hold Long Notes" : "长音要按住"}
+              body={locale === "en" ? "When you see a glowing tail, hold the key until the tail passes through." : "看见发光的长尾时，持续按住琴键，直到尾部通过。"}
             />
             <HowToStep
               number="03"
-              title={locale === "en" ? "Reveal the project" : "让作品展开"}
-              body={locale === "en" ? "Combos reveal the project scroll. A miss dims the scene, but never ends the music." : "连击会逐步展开项目长卷；失误只会让画面变淡，不会打断音乐。"}
+              title={locale === "en" ? "Let the Work Unfold" : "让作品展开"}
+              body={locale === "en" ? "Combos gradually reveal the project scroll. A miss only fades the image; it never interrupts the music." : "连击会逐步展开项目长卷；失误只会让画面变淡，不会打断音乐。"}
             />
           </div>
           <div className="howto-shortcuts">
-            <span><kbd>E</kbd>{locale === "en" ? "Open project archive" : "打开项目档案"}</span>
+            <span><kbd>E</kbd>{locale === "en" ? "Open the Project Archive" : "打开项目档案"}</span>
             <span><kbd>ESC</kbd>{locale === "en" ? "Pause" : "暂停"}</span>
           </div>
           <button type="button" className="game-modal-action" onClick={close}>
-            {locale === "en" ? "CHOOSE A STAGE" : "开始选择关卡"}
+            {locale === "en" ? "Start by Choosing a Level" : "开始选择关卡"}
           </button>
         </section>
       )}
@@ -84,9 +84,9 @@ export function ModalLayers() {
           aria-labelledby="credits-title"
           onMouseDown={(event) => event.stopPropagation()}
         >
-          <ModalClose onClick={close} label={locale === "en" ? "Close credits" : "关闭制作名单"} />
+          <ModalClose onClick={close} label={locale === "en" ? "Close Credits" : "关闭制作名单"} />
           <p className="game-modal-kicker">MUSIC & MAKING / 音乐与制作</p>
-          <h2 id="credits-title">{locale === "en" ? "Five recordings, five stage personalities." : "五个录音版本，五种关卡性格。"}</h2>
+          <h2 id="credits-title">{locale === "en" ? "Five recordings. Five level personalities." : "五个录音版本，五种关卡性格。"}</h2>
           <p className="game-modal-lead">
             {locale === "en" ? "Resonance Archive is an interactive portfolio created by Huaxin Zhang." : "《共鸣档案》是张铧心创作的互动作品集。"}
           </p>
@@ -96,14 +96,14 @@ export function ModalLayers() {
                 <span>0{index + 1}</span>
                 <div>
                   <strong>{track.title}</strong>
-                  <small>{locale === "en" ? "Creator / performer" : "制作者 / 演奏者"} · {track.creator}</small>
+                  <small>{locale === "en" ? "Creator / Performer" : "制作者 / 演奏者"} · {track.creator}</small>
                 </div>
               </li>
             ))}
           </ol>
           <p className="credit-tech">Next.js · Phaser 3 · Web Audio</p>
           <button type="button" className="game-modal-action" onClick={close}>
-            {locale === "en" ? "BACK TO THE STAGES" : "返回关卡"}
+            {locale === "en" ? "Back to Level" : "返回关卡"}
           </button>
         </section>
       )}

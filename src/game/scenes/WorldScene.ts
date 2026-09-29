@@ -260,9 +260,9 @@ export class WorldScene extends Phaser.Scene {
     this.memory.setSegment(kind);
     this.bridge.emit({ type: "segmentChange", segment: kind });
     const labels: Record<SegmentKind, string> = {
-      play: this.locale === "en" ? "PERFORM" : "演奏",
-      showcase: this.locale === "en" ? "MEMORY SCROLL · E FOR ARCHIVE" : "记忆卷轴 · E 打开档案",
-      climax: this.locale === "en" ? "RESONANCE CLIMAX" : "共鸣高潮",
+      play: this.locale === "en" ? "Performance" : "演奏",
+      showcase: this.locale === "en" ? "Memory Scroll · Press E to Open the Archive" : "记忆卷轴 · E 打开档案",
+      climax: this.locale === "en" ? "Resonance Climax" : "共鸣高潮",
     };
     this.segmentHint.setText(labels[kind]);
   }

@@ -43,7 +43,7 @@ export function EntryGate() {
           <span className="game-wordmark-mark">RA</span>
           <span>
             <strong>RESONANCE ARCHIVE</strong>
-            <small>{locale === "en" ? "A RHYTHM PORTFOLIO" : "一款节奏作品集"}</small>
+            <small>{locale === "en" ? "A Rhythm Portfolio" : "一款节奏作品集"}</small>
           </span>
         </Link>
         <div className="level-gate-actions">
@@ -57,8 +57,8 @@ export function EntryGate() {
           <Link href="/explore" className="game-portfolio-cta">
             <span aria-hidden>↗</span>
             <span>
-              <small>{locale === "en" ? "FULL PROJECT ARCHIVE" : "完整项目档案"}</small>
-              <strong>{locale === "en" ? "READ THE PORTFOLIO" : "阅读完整作品集"}</strong>
+              <small>{locale === "en" ? "Full Project Archive" : "完整项目档案"}</small>
+              <strong>{locale === "en" ? "Read the Full Portfolio" : "阅读完整作品集"}</strong>
             </span>
           </Link>
         </div>
@@ -69,25 +69,25 @@ export function EntryGate() {
           <p className="game-kicker">SELECT YOUR MOVEMENT / 选择乐章</p>
           <h1>
             {locale === "en" ? (
-              <>Five projects. Five arrangements.<br /><em>One evolving journey.</em></>
+              <>Five projects. Five arrangements.<br /><em>One journey, continually evolving.</em></>
             ) : (
               <>五个项目，五种编曲。<br /><em>一段不断进化的旅程。</em></>
             )}
           </h1>
         </div>
         <div className="control-primer" aria-label="Keyboard controls">
-          <span>{locale === "en" ? "DIRECT HIT CONTROLS" : "五轨直接击键"}</span>
+          <span>{locale === "en" ? "Direct Five-Lane Input" : "五轨直接击键"}</span>
           <div>
             {(["D", "F", "SPACE", "J", "K"] as const).map((key) => (
               <kbd key={key} className={key === "SPACE" ? "key-space" : ""}>{key}</kbd>
             ))}
           </div>
-          <small>{locale === "en" ? "One key per lane. No movement required." : "一键对应一轨，无需先移动角色。"}</small>
+          <small>{locale === "en" ? "One key per lane. No need to move the character first." : "一键对应一轨，无需先移动角色。"}</small>
         </div>
       </section>
 
-      <section className="level-select-layout" aria-label={locale === "en" ? "Level selection" : "关卡选择"}>
-        <div className="level-list" role="listbox" aria-label={locale === "en" ? "All levels are unlocked" : "全部关卡均已开放"}>
+      <section className="level-select-layout" aria-label={locale === "en" ? "Select a Level" : "选择关卡"}>
+        <div className="level-list" role="listbox" aria-label={locale === "en" ? "Level list—all five projects available" : "关卡列表，五个项目全部可选"}>
           {GAME_LEVELS.map((level) => {
             const active = level.id === selected.id;
             const difficulty = localize(DIFFICULTY_LABELS[level.difficulty], locale);
@@ -141,20 +141,20 @@ export function EntryGate() {
             <h2>{localize(selected.title, locale)}</h2>
             <p className="level-preview-description">{localize(selected.description, locale)}</p>
             <dl>
-              <div><dt>{locale === "en" ? "TRACK" : "音乐"}</dt><dd>{selected.track}</dd></div>
-              <div><dt>{locale === "en" ? "CREATOR" : "制作者"}</dt><dd>{selected.artist}</dd></div>
-              <div><dt>{locale === "en" ? "LENGTH" : "时长"}</dt><dd>{formatDuration(selected.duration)}</dd></div>
-              <div><dt>{locale === "en" ? "ACCESS" : "开放状态"}</dt><dd>{locale === "en" ? "UNLOCKED" : "已开放"}</dd></div>
+              <div><dt>{locale === "en" ? "Music" : "音乐"}</dt><dd>{selected.track}</dd></div>
+              <div><dt>{locale === "en" ? "Artist" : "制作者"}</dt><dd>{selected.artist}</dd></div>
+              <div><dt>{locale === "en" ? "Duration" : "时长"}</dt><dd>{formatDuration(selected.duration)}</dd></div>
+              <div><dt>{locale === "en" ? "Availability" : "开放状态"}</dt><dd>{locale === "en" ? "Unlocked" : "已开放"}</dd></div>
             </dl>
             <button type="button" className="level-start" onClick={startLevel}>
               <span>
-                <small>{locale === "en" ? "BEGIN STAGE" : "开始关卡"}</small>
+                <small>{locale === "en" ? "Start Level" : "开始关卡"}</small>
                 <strong>{localize(selected.shortTitle, locale)}</strong>
               </span>
               <i aria-hidden>▶</i>
             </button>
             <p className="level-start-hint">
-              {locale === "en" ? "Headphones recommended · Every level is available now" : "建议佩戴耳机 · 所有关卡均可直接选择"}
+              {locale === "en" ? "Headphones recommended · Every level can be selected directly" : "建议佩戴耳机 · 所有关卡均可直接选择"}
             </p>
           </div>
         </article>
@@ -180,7 +180,7 @@ export function EntryGate() {
             {content.entry.credits}
           </button>
         </div>
-        <p>{locale === "en" ? "ALL LEVELS OPEN · CHOOSE YOUR OWN ROUTE" : "全部关卡开放 · 选择你自己的路线"}</p>
+        <p>{locale === "en" ? "All levels unlocked · Choose your own route" : "全部关卡开放 · 选择你自己的路线"}</p>
       </footer>
     </main>
   );

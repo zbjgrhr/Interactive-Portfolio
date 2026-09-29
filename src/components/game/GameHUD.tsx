@@ -71,12 +71,12 @@ export function GameHUD() {
 
         <div className="hud-performance">
           <span className="hud-segment">
-            {segment === "showcase" ? (locale === "en" ? "MEMORY" : "记忆") : segment === "climax" ? (locale === "en" ? "RESONANCE" : "共鸣") : (locale === "en" ? "PERFORM" : "演奏")}
+            {segment === "showcase" ? (locale === "en" ? "Memory" : "记忆") : segment === "climax" ? (locale === "en" ? "Resonance" : "共鸣") : (locale === "en" ? "Performance" : "演奏")}
           </span>
           <span className="hud-memory">{String(revealLevel).padStart(2, "0")} / 04</span>
           <span className={`hud-combo ${resonance ? "is-resonant" : ""}`}>
             <strong>{combo}</strong>
-            <small>{resonance ? (locale === "en" ? "RESONANCE" : "共鸣状态") : (locale === "en" ? "COMBO" : "连击")}</small>
+            <small>{resonance ? (locale === "en" ? "Resonance Status" : "共鸣状态") : (locale === "en" ? "Combo" : "连击")}</small>
           </span>
           {lastJudgment && (
             <span className={`hud-judge hud-judge-${lastJudgment}`}>{lastJudgment}</span>
@@ -120,10 +120,10 @@ export function GameHUD() {
                 openArchive(level.id);
               }}
             >
-              {locale === "en" ? "ARCHIVE" : "档案"}
+              {locale === "en" ? "Archive" : "档案"}
             </button>
           )}
-          <button type="button" onClick={exitToLevels}>{locale === "en" ? "LEVELS" : "选关"}</button>
+          <button type="button" onClick={exitToLevels}>{locale === "en" ? "Level Select" : "选关"}</button>
         </div>
 
         <div className="hud-progress" aria-label={`${Math.round(levelProgress * 100)}%`}>
@@ -172,7 +172,7 @@ function PauseOverlay() {
   return (
     <div className="overlay-panel game-pause-panel" role="dialog" aria-modal>
       <p>STAGE 0{level.order} · {localize(DIFFICULTY_LABELS[level.difficulty], locale)}</p>
-      <h2>{locale === "en" ? "Performance paused" : "演奏已暂停"}</h2>
+      <h2>{locale === "en" ? "Performance Paused" : "演奏已暂停"}</h2>
       <button
         type="button"
         className="btn-primary"
@@ -191,7 +191,7 @@ function PauseOverlay() {
           getGameBridge().sendCommand({ type: "replay" });
         }}
       >
-        {locale === "en" ? "Restart stage" : "重新开始"}
+        {locale === "en" ? "Restart" : "重新开始"}
       </button>
       <button
         type="button"
@@ -202,10 +202,10 @@ function PauseOverlay() {
           setMode("entry");
         }}
       >
-        {locale === "en" ? "Return to level select" : "返回选关"}
+        {locale === "en" ? "Back to Level Select" : "返回选关"}
       </button>
       <Link href="/explore" className="btn-ghost" onClick={() => setMode("explore")}>
-        {locale === "en" ? "Read the portfolio" : "阅读完整作品集"}
+        {locale === "en" ? "Read the Full Portfolio" : "阅读完整作品集"}
       </Link>
     </div>
   );
@@ -227,12 +227,12 @@ function CodaOverlay() {
       role="dialog"
       aria-modal
     >
-      <p>{locale === "en" ? "STAGE CLEAR" : "关卡完成"} · 0{level.order}</p>
+      <p>{locale === "en" ? "Level Complete" : "关卡完成"} · 0{level.order}</p>
       <h2>{localize(level.title, locale)}</h2>
       <blockquote>{localize(level.ending, locale)}</blockquote>
       <div className="coda-results">
-        <div><strong>{maxCombo}</strong><span>{locale === "en" ? "MAX COMBO" : "最高连击"}</span></div>
-        <div><strong>{phrasePerfect ? "S" : "A"}</strong><span>{locale === "en" ? "STAGE RANK" : "关卡评级"}</span></div>
+        <div><strong>{maxCombo}</strong><span>{locale === "en" ? "Highest Combo" : "最高连击"}</span></div>
+        <div><strong>{phrasePerfect ? "S" : "A"}</strong><span>{locale === "en" ? "Level Grade" : "关卡评级"}</span></div>
       </div>
       <div className="coda-actions">
         <button
@@ -243,7 +243,7 @@ function CodaOverlay() {
             getGameBridge().sendCommand({ type: "replay" });
           }}
         >
-          {locale === "en" ? "Replay stage" : "重玩关卡"}
+          {locale === "en" ? "Replay Level" : "重玩关卡"}
         </button>
         <button
           type="button"
@@ -253,10 +253,10 @@ function CodaOverlay() {
             setMode("entry");
           }}
         >
-          {locale === "en" ? "Choose another level" : "选择其他关卡"}
+          {locale === "en" ? "Choose Another Level" : "选择其他关卡"}
         </button>
         <Link href="/explore" className="btn-ghost" onClick={() => setMode("explore")}>
-          {locale === "en" ? "Open full project" : "打开完整项目"}
+          {locale === "en" ? "Open Full Project" : "打开完整项目"}
         </Link>
       </div>
     </div>
@@ -312,13 +312,13 @@ function PianoControls({
   return (
     <div
       className="rhythm-keyboard"
-      aria-label={locale === "en" ? "Five clickable piano controls" : "五个可点击钢琴按键"}
+      aria-label={locale === "en" ? "Five clickable piano keys mapped to D, F, Space, J, and K" : "五个可点击的钢琴按键，分别对应 D、F、空格、J、K"}
       data-disabled={disabled}
       data-judgment={judgment ?? undefined}
       style={{ "--level-accent": accent } as React.CSSProperties}
     >
       <span className="rhythm-keyboard-label">
-        {locale === "en" ? "KEYBOARD OR CLICK" : "键盘或鼠标点击"}
+        {locale === "en" ? "Keyboard or Mouse" : "键盘或鼠标点击"}
       </span>
       {KEY_LABELS.map((label, lane) => (
         <button
@@ -328,7 +328,7 @@ function PianoControls({
           data-wide={label === "SPACE"}
           data-active={pressedLanes.includes(lane)}
           disabled={disabled}
-          aria-label={`${locale === "en" ? "Play lane" : "演奏轨道"} ${lane + 1}: ${label}`}
+          aria-label={`${locale === "en" ? "Lane 1, key D" : "第 1 轨，按键 D"} ${lane + 1}: ${label}`}
           onPointerDown={(event) => {
             event.preventDefault();
             event.currentTarget.setPointerCapture(event.pointerId);
