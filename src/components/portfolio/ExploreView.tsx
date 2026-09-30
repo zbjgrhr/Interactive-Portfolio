@@ -25,7 +25,7 @@ export function ExploreView() {
           <span>HZ</span>
           <strong>Resonance Archive</strong>
         </Link>
-        <nav className="explore-nav" aria-label="Portfolio navigation">
+        <nav className="explore-nav" aria-label={locale === "en" ? "Portfolio navigation" : "作品集导航"}>
           <a href="#work">{locale === "en" ? "Work" : "作品"}</a>
           <a href="#experience">{locale === "en" ? "Experience" : "经历"}</a>
           <a href="#contact">{locale === "en" ? "Contact" : "联系"}</a>
@@ -70,7 +70,11 @@ export function ExploreView() {
           <dl>
             <div>
               <dt>{locale === "en" ? "Education" : "教育"}</dt>
-              <dd>University of Birmingham · MSc AI & CS · 30% Merit Scholarship</dd>
+              <dd>
+                {locale === "en"
+                  ? "University of Birmingham · MSc AI & CS · 30% Merit Scholarship"
+                  : "University of Birmingham（伯明翰大学） · MSc AI & CS（人工智能与计算机科学硕士） · 30% Merit Scholarship"}
+              </dd>
             </div>
             <div>
               <dt>{locale === "en" ? "Focus" : "方向"}</dt>

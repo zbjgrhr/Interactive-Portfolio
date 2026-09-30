@@ -4,15 +4,15 @@ import "./globals.css";
 import "./game-v2.css";
 
 export const metadata: Metadata = {
-  title: "Huaxin Zhang — Game Designer × AI Product Builder",
+  title: "Huaxin Zhang — Game Designer & AI Product Builder",
   description:
-    "Huaxin Zhang's interactive portfolio: game systems, narrative design, multi-agent AI products, and working prototypes.",
+    "Huaxin Zhang's interactive portfolio — game systems, narrative design, multi-agent AI products, and working prototypes.",
   keywords: [
-    "Huaxin Zhang",
-    "interactive portfolio",
-    "Resonance Archive",
-    "AI",
-    "creative technology",
+    "Huaxin Zhang（张铧心）",
+    "互动作品集",
+    "共鸣档案",
+    "AI（人工智能）",
+    "创意技术",
     "Phaser",
   ],
   openGraph: {

@@ -21,10 +21,10 @@ export class ErrorBoundary extends Component<Props, State> {
     if (this.state.hasError) {
       return (
         <main className="explore-page">
-          <h1>Something went quiet.</h1>
-          <p>The interactive layer failed to load. You can still browse the archive.</p>
+          <h1>出了点问题。</h1>
+          <p>互动层加载失败，你仍然可以浏览作品集。</p>
           <a className="btn-primary" href="/explore">
-            Explore Directly
+            直接浏览
           </a>
         </main>
       );

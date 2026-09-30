@@ -135,7 +135,7 @@ const profileCopy: Record<Locale, ProfileCopy> = {
         evidence: ["支持线上展览内容与交互上线", "参与获奖展览项目", "设计三套表情包，其中下载量最高的一套超过 6,000 次"],
       },
       {
-        organization: "Social Dubai",
+        organization: "Social Dubai（社交迪拜）",
         role: "社群运营与活动策划",
         period: "2023–2024",
         location: "迪拜，阿联酋",
@@ -153,7 +153,7 @@ const profileCopy: Record<Locale, ProfileCopy> = {
     ],
     timelineLabel: "补充实践",
     timeline: [
-      { period: "2023.11–2024.08", title: "YEE AU CARRÉ DMCC · HR Specialist", detail: "在迪拜负责招聘、员工协调与跨文化运营。" },
+      { period: "2023.11–2024.08", title: "YEE AU CARRÉ DMCC · HR Specialist（人力资源专员）", detail: "在迪拜负责招聘、员工协调与跨文化运营。" },
       { period: "2023–2026", title: "独立游艇与海钓服务实践", detail: "在阿联酋负责获客、转化、服务协调与单笔收益核算。" },
     ],
   },

@@ -75,7 +75,7 @@ export function EntryGate() {
             )}
           </h1>
         </div>
-        <div className="control-primer" aria-label="Keyboard controls">
+        <div className="control-primer" aria-label={locale === "en" ? "Keyboard controls" : "键盘操作说明"}>
           <span>{locale === "en" ? "Direct Five-Lane Input" : "五轨直接击键"}</span>
           <div>
             {(["D", "F", "SPACE", "J", "K"] as const).map((key) => (

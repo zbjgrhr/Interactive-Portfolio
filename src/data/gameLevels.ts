@@ -16,7 +16,7 @@ const panel = (eyebrow: LocalizedText, title: LocalizedText, body: LocalizedText
 export const GAME_LEVELS: GameLevel[] = [
   {
     id: "pixel-world", order: 1, chapter: "movement-i", difficulty: "hard",
-    title: t("Pixel World", "PIXEL WORLD"), shortTitle: t("Agent Studio", "Agent 制作室"),
+    title: t("Pixel World", "PIXEL WORLD（像素世界）"), shortTitle: t("Agent Studio", "Agent 制作室"),
     description: t("A ten-agent workflow turns one creative premise into a complete world that can be inspected, played, and taken away.", "通过十 Agent 工作流，把一个创意原点变成可检查、能游玩、能带走的完整世界。"),
     track: "Forest of Piano - Csikos Post (Arr. for Piano)", artist: "Forest of Piano", audio: "/audio/portfolio-theme.mp3", bpm: 132, duration: 140.539,
     environment: "pixel-world", accent: "#f472b6", accentNumber: 0xf472b6, cover: "/portfolio/pixel-world-v5-platform-overview.png",
@@ -39,7 +39,7 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "rainy-arcade", order: 2, chapter: "movement-ii", difficulty: "hard",
     title: t("Rainy Night Arcade", "雨夜游戏厅"), shortTitle: t("Rainy Night Arcade", "雨夜游戏厅"),
     description: t("A narrative arcade on a rainy night, where player behavior becomes locally stored design evidence that players may choose to export.", "一座雨夜叙事街机厅：玩家行为在这里变成只存本地、可自行导出的设计线索。"),
-    track: "V.A. - Csikos post - 네케", artist: "V.A.", audio: "/audio/candidates/va-draw-from-classic.mp3", bpm: 122, duration: 159.033,
+    track: "V.A. - Csikos Post - 네케", artist: "V.A.", audio: "/audio/candidates/va-draw-from-classic.mp3", bpm: 122, duration: 159.033,
     environment: "rainy-arcade", accent: "#57c7ff", accentNumber: 0x57c7ff, cover: "/portfolio/rain-arcade-hero.png",
     mechanic: t("Explore · Choose · Reflect", "探索 · 选择 · 回望"),
     narrative: [
@@ -81,7 +81,7 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "auto-tune", order: 4, chapter: "movement-iv", difficulty: "casual",
     title: t("Auto Tune", "Auto Tune"), shortTitle: t("Auto Tune", "Auto Tune"),
     description: t("A browser extension that brings multilingual posting across three platforms into one compact control panel.", "一款把三平台多语言发帖操作收进小型控制面板的浏览器扩展。"),
-    track: "office music - Csikos Post", artist: "Office Music", audio: "/audio/candidates/office-music.mp3", bpm: 112, duration: 113.371,
+    track: "Office Music - Csikos Post", artist: "Office Music", audio: "/audio/candidates/office-music.mp3", bpm: 112, duration: 113.371,
     environment: "auto-tune", accent: "#ffad5b", accentNumber: 0xffad5b, cover: "/portfolio/auto-reply-control.webp",
     mechanic: t("Draft · Detect · Post", "草稿 · 识别 · 发布"),
     narrative: [

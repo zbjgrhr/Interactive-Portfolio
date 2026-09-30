@@ -77,7 +77,7 @@ export class WorldScene extends Phaser.Scene {
     this.avatar.create();
 
     this.segmentHint = this.add
-      .text(GAME_WIDTH / 2, PIANO_TOP + 20, "PERFORM", {
+      .text(GAME_WIDTH / 2, PIANO_TOP + 20, "演奏", {
         fontFamily: "Courier New, monospace",
         fontSize: "11px",
         color: "#64748b",
@@ -139,6 +139,7 @@ export class WorldScene extends Phaser.Scene {
       case "setLocale":
         this.locale = command.locale;
         this.memory.setLocale(command.locale);
+        this.setSegment(this.segments.getKind());
         break;
       case "replay":
         this.restartLevel();

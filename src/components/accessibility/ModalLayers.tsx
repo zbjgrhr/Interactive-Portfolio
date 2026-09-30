@@ -6,9 +6,9 @@ const KEYS = ["D", "F", "SPACE", "J", "K"];
 
 const TRACKS = [
   { title: "Forest of Piano - Csikos Post (Arr. for Piano)", creator: "Forest of Piano" },
-  { title: "V.A. - Csikos post - 네케", creator: "V.A." },
+  { title: "V.A. - Csikos Post - 네케", creator: "V.A." },
   { title: "市松寿ゞ謡 - クシコスポスト", creator: "市松寿ゞ謡" },
-  { title: "office music - Csikos Post", creator: "office music" },
+  { title: "Office Music - Csikos Post", creator: "Office Music" },
   { title: "Hermann Necke - Csikos Post", creator: "Hermann Necke" },
 ];
 

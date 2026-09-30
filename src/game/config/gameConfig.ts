@@ -47,7 +47,7 @@ export function createGameConfig(
         game.canvas.setAttribute("role", "img");
         game.canvas.setAttribute(
           "aria-label",
-          "Resonance Archive interactive piano world",
+          "Resonance Archive（共鸣档案） · 互动钢琴世界",
         );
       },
     },

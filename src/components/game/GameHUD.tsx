@@ -79,7 +79,11 @@ export function GameHUD() {
             <small>{resonance ? (locale === "en" ? "Resonance Status" : "共鸣状态") : (locale === "en" ? "Combo" : "连击")}</small>
           </span>
           {lastJudgment && (
-            <span className={`hud-judge hud-judge-${lastJudgment}`}>{lastJudgment}</span>
+            <span className={`hud-judge hud-judge-${lastJudgment}`}>
+              {locale === "en"
+                ? lastJudgment
+                : { perfect: "完美", great: "优秀", miss: "失误" }[lastJudgment]}
+            </span>
           )}
         </div>
 
@@ -93,7 +97,9 @@ export function GameHUD() {
               getGameBridge().sendCommand({ type: "setSound", enabled: !soundEnabled });
             }}
           >
-            {soundEnabled ? "SOUND ON" : "SOUND OFF"}
+            {locale === "en"
+              ? soundEnabled ? "SOUND ON" : "SOUND OFF"
+              : soundEnabled ? "声音：开" : "声音：关"}
           </button>
           <button
             type="button"
@@ -103,7 +109,9 @@ export function GameHUD() {
               getGameBridge().sendCommand({ type: "setAssist", enabled: !assistMode });
             }}
           >
-            {assistMode ? "ASSIST ON" : "ASSIST"}
+            {locale === "en"
+              ? assistMode ? "ASSIST ON" : "ASSIST"
+              : assistMode ? "辅助：开" : "辅助：关"}
           </button>
           <button
             type="button"
@@ -139,7 +147,7 @@ export function GameHUD() {
           aria-live="polite"
         >
           <div>
-            <p>LOADING STAGE 0{level.order}</p>
+            <p>{locale === "en" ? "LOADING" : "正在加载"} STAGE 0{level.order}</p>
             <h2>{localize(level.title, locale)}</h2>
             <span>{locale === "en" ? "Listening for the performance’s real piano attacks…" : "正在识别演奏中的真实钢琴起音…"}</span>
             <i><b style={{ width: `${Math.round(loadingProgress * 100)}%` }} /></i>
@@ -328,7 +336,7 @@ function PianoControls({
           data-wide={label === "SPACE"}
           data-active={pressedLanes.includes(lane)}
           disabled={disabled}
-          aria-label={`${locale === "en" ? "Lane 1, key D" : "第 1 轨，按键 D"} ${lane + 1}: ${label}`}
+          aria-label={locale === "en" ? `Lane ${lane + 1}, key ${label}` : `第 ${lane + 1} 轨，按键 ${label}`}
           onPointerDown={(event) => {
             event.preventDefault();
             event.currentTarget.setPointerCapture(event.pointerId);
