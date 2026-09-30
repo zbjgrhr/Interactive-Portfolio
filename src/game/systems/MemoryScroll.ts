@@ -120,16 +120,16 @@ export class MemoryScroll {
     this.skin = id;
     const colors: Record<string, number> = {
       "pixel-void": COLORS.deepBlue,
-      "pixel-generate": 0x0d1f33,
-      "pixel-world": 0x0b1a2b,
-      "rainy-arcade": 0x071926,
-      "iwbtz": 0x141b12,
-      "auto-tune": 0x21160c,
-      "study-assistant": 0x101826,
-      "browser-city": 0x101826,
-      "reply-pulse": 0x09211f,
-      "emotion-quiet": 0x141028,
-      "research-wave": 0x0a1622,
+      "pixel-generate": 0x765569,
+      "pixel-world": 0x6f5266,
+      "rainy-arcade": 0x675f82,
+      "iwbtz": 0x7a5c5c,
+      "auto-tune": 0x7b5e54,
+      "study-assistant": 0x5f716e,
+      "browser-city": 0x5f716e,
+      "reply-pulse": 0x596d69,
+      "emotion-quiet": 0x725b76,
+      "research-wave": 0x5e6878,
       "coda-merge": COLORS.midnightPurple,
     };
     if (id === "pixel-generate") this.ensureBaseGrid();
@@ -246,7 +246,7 @@ export class MemoryScroll {
         panelTop + panelHeight / 2,
         GAME_WIDTH - 112,
         panelHeight,
-        0x07121f,
+        0x6b4f62,
         0.94,
       )
       .setStrokeStyle(1, level.accentNumber, 0.72);
@@ -278,14 +278,14 @@ export class MemoryScroll {
     const title = this.scene.add.text(94, panelTop + 94, localize(panel.title, this.stageLocale), {
       fontFamily: "Georgia, serif",
       fontSize: "27px",
-      color: "#f8fafc",
+      color: "#fff8ee",
       wordWrap: { width: 430 },
       lineSpacing: 5,
     });
     const body = this.scene.add.text(94, panelTop + 176, localize(panel.body, this.stageLocale), {
       fontFamily: "Arial, sans-serif",
       fontSize: "15px",
-      color: "#a9b7c9",
+      color: "#ead4dc",
       wordWrap: { width: 430 },
       lineSpacing: 7,
     });
@@ -362,7 +362,7 @@ export class MemoryScroll {
       .text(GAME_WIDTH / 2, 80, projectId.replace(/-/g, " ").toUpperCase(), {
         fontFamily: "Courier New, monospace",
         fontSize: "16px",
-        color: "#5eead4",
+        color: "#ffc3d7",
       })
       .setOrigin(0.5)
       .setAlpha(0)
@@ -385,7 +385,7 @@ export class MemoryScroll {
       this.scene.add.text(0, 0, `${projectId} · L${level}`, {
         fontFamily: "Courier New, monospace",
         fontSize: "13px",
-        color: "#5eead4",
+        color: "#ffc3d7",
       }),
     );
     return root;
@@ -397,7 +397,7 @@ export class MemoryScroll {
       if (!l.synthesized) l.root.setAlpha(0.45 + amount * 0.55);
     });
     const color = Phaser.Display.Color.Interpolate.ColorWithColor(
-      Phaser.Display.Color.ValueToColor(0x3a4458),
+      Phaser.Display.Color.ValueToColor(0xd9a9bc),
       Phaser.Display.Color.ValueToColor(COLORS.deepBlue),
       100,
       Math.floor(amount * 100),

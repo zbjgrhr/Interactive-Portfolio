@@ -40,7 +40,7 @@ export const GAME_LEVELS: GameLevel[] = [
     title: t("Rainy Night Arcade", "雨夜游戏厅"), shortTitle: t("Rainy Night Arcade", "雨夜游戏厅"),
     description: t("A narrative arcade on a rainy night, where player behavior becomes locally stored design evidence that players may choose to export.", "一座雨夜叙事街机厅：玩家行为在这里变成只存本地、可自行导出的设计线索。"),
     track: "V.A. - Csikos Post - 네케", artist: "V.A.", audio: "/audio/candidates/va-draw-from-classic.mp3", bpm: 122, duration: 159.033,
-    environment: "rainy-arcade", accent: "#57c7ff", accentNumber: 0x57c7ff, cover: "/portfolio/rain-arcade-hero.png",
+    environment: "rainy-arcade", accent: "#9d8ed9", accentNumber: 0x9d8ed9, cover: "/portfolio/rain-arcade-hero.png",
     mechanic: t("Explore · Choose · Reflect", "探索 · 选择 · 回望"),
     narrative: [
       t("Rain slows players down—just enough to notice a story.", "雨让玩家慢下来，刚好有时间看见一段故事。"),
@@ -61,7 +61,7 @@ export const GAME_LEVELS: GameLevel[] = [
     title: t("I Wanna Be the Zomboy", "I Wanna Be the Zomboy"), shortTitle: t("IWBTZ", "IWBTZ"),
     description: t("A hardcore platformer about misunderstanding, persistence, and accepting an imperfect self.", "一款关于误解、坚持与接纳不完美自我的硬核平台游戏。"),
     track: "市松寿ゞ謡 - クシコスポスト", artist: "市松寿ゞ謡", audio: "/audio/candidates/ichimatsu.mp3", bpm: 144, duration: 128.47,
-    environment: "iwbtz", accent: "#d9ff45", accentNumber: 0xd9ff45, cover: "/portfolio/iwbtz-menu.png",
+    environment: "iwbtz", accent: "#ef846f", accentNumber: 0xef846f, cover: "/portfolio/iwbtz-menu.png",
     mechanic: t("Precision Platforming · Escalating Bosses", "精密跳跃 · 递进式 Boss"),
     narrative: [
       t("Seven standard levels turn the pressures of growing up into spaces players can cross.", "七个标准关卡，把成长压力变成玩家可以穿过的空间。"),
@@ -82,7 +82,7 @@ export const GAME_LEVELS: GameLevel[] = [
     title: t("Auto Tune", "Auto Tune"), shortTitle: t("Auto Tune", "Auto Tune"),
     description: t("A browser extension that brings multilingual posting across three platforms into one compact control panel.", "一款把三平台多语言发帖操作收进小型控制面板的浏览器扩展。"),
     track: "Office Music - Csikos Post", artist: "Office Music", audio: "/audio/candidates/office-music.mp3", bpm: 112, duration: 113.371,
-    environment: "auto-tune", accent: "#ffad5b", accentNumber: 0xffad5b, cover: "/portfolio/auto-reply-control.webp",
+    environment: "auto-tune", accent: "#efa064", accentNumber: 0xefa064, cover: "/portfolio/auto-reply-control.webp",
     mechanic: t("Draft · Detect · Post", "草稿 · 识别 · 发布"),
     narrative: [
       t("One control panel recognizes the current social platform.", "一个控制面板会识别当前社交平台。"),
@@ -103,7 +103,7 @@ export const GAME_LEVELS: GameLevel[] = [
     title: t("Literature Research Assistant", "文献查阅辅助工具"), shortTitle: t("Literature Research Assistant", "文献查阅辅助工具"),
     description: t("Keep translation, highlighting, notes, mind maps, and focus timing beside the source instead of scattering them across separate tools.", "把翻译、高亮、笔记、思维导图与专注计时留在原文旁边，不再分散到多个工具。"),
     track: "Hermann Necke - Csikos Post", artist: "Hermann Necke", audio: "/audio/candidates/hermann-necke.mp3", bpm: 168, duration: 178.625,
-    environment: "study-assistant", accent: "#67e8f9", accentNumber: 0x67e8f9, cover: "/portfolio/web-study-workspace.webp",
+    environment: "study-assistant", accent: "#76bfa8", accentNumber: 0x76bfa8, cover: "/portfolio/web-study-workspace.webp",
     mechanic: t("Read · Connect · Retain", "阅读 · 连接 · 留存"),
     narrative: [
       t("Understanding breaks whenever every thought requires switching applications.", "每个念头都要切换应用时，理解就会断裂。"),
