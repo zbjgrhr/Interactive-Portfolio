@@ -62,6 +62,13 @@ export class WorldScene extends Phaser.Scene {
     super("WorldScene");
   }
 
+  preload() {
+    this.load.image(
+      "watercolor-memory-bg",
+      "/portfolio/resonance-watercolor-journey.png",
+    );
+  }
+
   async create() {
     this.cameras.main.setBackgroundColor(COLORS.deepBlue);
     this.cameras.main.setBounds(0, 0, GAME_WIDTH, this.scale.height);

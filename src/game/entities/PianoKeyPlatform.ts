@@ -55,9 +55,9 @@ export function generateKeyTextures(scene: Phaser.Scene) {
     const g = scene.make.graphics({ x: 0, y: 0 });
     g.fillStyle(COLORS.keyWhite, 1);
     g.fillRect(0, 0, 72, 18);
-    g.fillStyle(0xf2cad8, 1);
+    g.fillStyle(0xead9b9, 1);
     g.fillRect(0, 14, 72, 4);
-    g.lineStyle(1, 0xc991a8, 1);
+    g.lineStyle(1, 0xbfae8c, 1);
     g.strokeRect(0, 0, 72, 18);
     g.generateTexture("key-white", 72, 18);
     g.destroy();
@@ -66,7 +66,7 @@ export function generateKeyTextures(scene: Phaser.Scene) {
     const g = scene.make.graphics({ x: 0, y: 0 });
     g.fillStyle(COLORS.keyBlack, 1);
     g.fillRect(0, 0, 44, 14);
-    g.fillStyle(0x8b687d, 1);
+    g.fillStyle(0x3b4a4d, 1);
     g.fillRect(0, 10, 44, 4);
     g.generateTexture("key-black", 44, 14);
     g.destroy();

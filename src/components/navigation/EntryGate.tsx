@@ -43,11 +43,6 @@ export function EntryGate() {
         <i className="dream-cloud dream-cloud-two" />
         <i className="dream-spark dream-spark-one">✦</i>
         <i className="dream-spark dream-spark-two">✦</i>
-        <span className="dream-companion">
-          <i className="dream-companion-face" />
-          <i className="dream-companion-body" />
-          <i className="dream-companion-note">♪</i>
-        </span>
       </div>
       <header className="level-gate-header">
         <Link href="/play" className="game-wordmark">

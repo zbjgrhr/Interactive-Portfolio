@@ -84,8 +84,22 @@ export class MemoryScroll {
   }
 
   create() {
+    if (this.scene.textures.exists("watercolor-memory-bg")) {
+      this.scene.add
+        .image(GAME_WIDTH / 2, PIANO_TOP / 2, "watercolor-memory-bg")
+        .setDisplaySize(GAME_WIDTH, PIANO_TOP + 40)
+        .setAlpha(0.25)
+        .setDepth(-1);
+    }
     this.bg = this.scene.add
-      .rectangle(GAME_WIDTH / 2, PIANO_TOP / 2, GAME_WIDTH, PIANO_TOP + 40, COLORS.deepBlue)
+      .rectangle(
+        GAME_WIDTH / 2,
+        PIANO_TOP / 2,
+        GAME_WIDTH,
+        PIANO_TOP + 40,
+        COLORS.deepBlue,
+        0.82,
+      )
       .setDepth(0);
     this.scrollRoot = this.scene.add.container(0, 0).setDepth(2);
     this.scene.add
@@ -120,16 +134,16 @@ export class MemoryScroll {
     this.skin = id;
     const colors: Record<string, number> = {
       "pixel-void": COLORS.deepBlue,
-      "pixel-generate": 0x765569,
-      "pixel-world": 0x6f5266,
-      "rainy-arcade": 0x675f82,
-      "iwbtz": 0x7a5c5c,
-      "auto-tune": 0x7b5e54,
-      "study-assistant": 0x5f716e,
-      "browser-city": 0x5f716e,
-      "reply-pulse": 0x596d69,
-      "emotion-quiet": 0x725b76,
-      "research-wave": 0x5e6878,
+      "pixel-generate": 0x385562,
+      "pixel-world": 0x314653,
+      "rainy-arcade": 0x354f61,
+      "iwbtz": 0x654c43,
+      "auto-tune": 0x685a3d,
+      "study-assistant": 0x3f584c,
+      "browser-city": 0x3f584c,
+      "reply-pulse": 0x36564f,
+      "emotion-quiet": 0x554a51,
+      "research-wave": 0x394f5c,
       "coda-merge": COLORS.midnightPurple,
     };
     if (id === "pixel-generate") this.ensureBaseGrid();
@@ -144,7 +158,7 @@ export class MemoryScroll {
         }
       });
     }
-    if (colors[id] !== undefined) this.bg.setFillStyle(colors[id]);
+    if (colors[id] !== undefined) this.bg.setFillStyle(colors[id], 0.82);
   }
 
   private ensureBaseGrid() {
@@ -246,7 +260,7 @@ export class MemoryScroll {
         panelTop + panelHeight / 2,
         GAME_WIDTH - 112,
         panelHeight,
-        0x6b4f62,
+        0xfff7e6,
         0.94,
       )
       .setStrokeStyle(1, level.accentNumber, 0.72);
@@ -278,14 +292,14 @@ export class MemoryScroll {
     const title = this.scene.add.text(94, panelTop + 94, localize(panel.title, this.stageLocale), {
       fontFamily: "Georgia, serif",
       fontSize: "27px",
-      color: "#fff8ee",
+      color: "#26383b",
       wordWrap: { width: 430 },
       lineSpacing: 5,
     });
     const body = this.scene.add.text(94, panelTop + 176, localize(panel.body, this.stageLocale), {
-      fontFamily: "Arial, sans-serif",
+      fontFamily: "Trebuchet MS, sans-serif",
       fontSize: "15px",
-      color: "#ead4dc",
+      color: "#52625d",
       wordWrap: { width: 430 },
       lineSpacing: 7,
     });
@@ -362,7 +376,7 @@ export class MemoryScroll {
       .text(GAME_WIDTH / 2, 80, projectId.replace(/-/g, " ").toUpperCase(), {
         fontFamily: "Courier New, monospace",
         fontSize: "16px",
-        color: "#ffc3d7",
+        color: "#a8d5d5",
       })
       .setOrigin(0.5)
       .setAlpha(0)
@@ -385,7 +399,7 @@ export class MemoryScroll {
       this.scene.add.text(0, 0, `${projectId} · L${level}`, {
         fontFamily: "Courier New, monospace",
         fontSize: "13px",
-        color: "#ffc3d7",
+        color: "#a8d5d5",
       }),
     );
     return root;
@@ -397,12 +411,15 @@ export class MemoryScroll {
       if (!l.synthesized) l.root.setAlpha(0.45 + amount * 0.55);
     });
     const color = Phaser.Display.Color.Interpolate.ColorWithColor(
-      Phaser.Display.Color.ValueToColor(0xd9a9bc),
+      Phaser.Display.Color.ValueToColor(0x8da7a2),
       Phaser.Display.Color.ValueToColor(COLORS.deepBlue),
       100,
       Math.floor(amount * 100),
     );
-    this.bg.setFillStyle(Phaser.Display.Color.GetColor(color.r, color.g, color.b));
+    this.bg.setFillStyle(
+      Phaser.Display.Color.GetColor(color.r, color.g, color.b),
+      0.82,
+    );
   }
 
   update(delta: number, pitchBias: number, showcase: boolean) {

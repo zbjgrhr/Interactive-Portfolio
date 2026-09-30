@@ -58,17 +58,6 @@ export function GameHUD() {
       <div className="game-dream-overlay" aria-hidden>
         <i className="game-dream-glow game-dream-glow-left" />
         <i className="game-dream-glow game-dream-glow-right" />
-        <span
-          className="rhythm-companion"
-          data-judgment={lastJudgment ?? undefined}
-          data-resonance={resonance}
-        >
-          <i className="rhythm-companion-ear rhythm-companion-ear-left" />
-          <i className="rhythm-companion-ear rhythm-companion-ear-right" />
-          <i className="rhythm-companion-face" />
-          <i className="rhythm-companion-scarf" />
-          <i className="rhythm-companion-note">♪</i>
-        </span>
       </div>
       <div
         className={`game-hud game-hud-${level.difficulty}`}
