@@ -5,7 +5,7 @@ export interface LocalizedText { en: string; zh: string }
 export interface LevelScrollPanel { eyebrow: LocalizedText; title: LocalizedText; body: LocalizedText; image: string }
 export interface GameLevel {
   id: ProjectId; order: number; chapter: ChapterId; difficulty: LevelDifficulty;
-  title: LocalizedText; shortTitle: LocalizedText; description: LocalizedText;
+  title: LocalizedText; shortTitle: LocalizedText; description: LocalizedText; mood: LocalizedText;
   track: string; artist: string; audio: string; bpm: number; duration: number;
   environment: string; accent: string; accentNumber: number; cover: string;
   mechanic: LocalizedText; narrative: LocalizedText[]; panels: LevelScrollPanel[]; ending: LocalizedText;
@@ -18,7 +18,8 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "pixel-world", order: 1, chapter: "movement-i", difficulty: "hard",
     title: t("Pixel World", "PIXEL WORLD（像素世界）"), shortTitle: t("Agent Studio", "Agent 制作室"),
     description: t("A ten-agent workflow turns one creative premise into a complete world that can be inspected, played, and taken away.", "通过十 Agent 工作流，把一个创意原点变成可检查、能游玩、能带走的完整世界。"),
-    track: "Forest of Piano - Csikos Post (Arr. for Piano)", artist: "Forest of Piano", audio: "/audio/portfolio-theme.mp3", bpm: 132, duration: 140.539,
+    mood: t("A sunlit departure into a new world", "向着新世界出发的明亮旅程"),
+    track: "Piano Sonata No. 15 ‘Pastoral’ · III. Scherzo", artist: "L. van Beethoven · Karine Gilanyan", audio: "/audio/watercolor/beethoven-pastoral-scherzo.ogg", bpm: 132, duration: 118.596,
     environment: "pixel-world", accent: "#e45f63", accentNumber: 0xe45f63, cover: "/portfolio/pixel-world-v5-platform-overview.png",
     mechanic: t("Creative Brief · Agent Review · Playable Delivery", "创意简报 · Agent 互审 · 可玩交付"),
     narrative: [
@@ -39,7 +40,8 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "rainy-arcade", order: 2, chapter: "movement-ii", difficulty: "hard",
     title: t("Rainy Night Arcade", "雨夜游戏厅"), shortTitle: t("Rainy Night Arcade", "雨夜游戏厅"),
     description: t("A narrative arcade on a rainy night, where player behavior becomes locally stored design evidence that players may choose to export.", "一座雨夜叙事街机厅：玩家行为在这里变成只存本地、可自行导出的设计线索。"),
-    track: "V.A. - Csikos Post - 네케", artist: "V.A.", audio: "/audio/candidates/va-draw-from-classic.mp3", bpm: 122, duration: 159.033,
+    mood: t("A quiet mystery slowly surfacing in the rain", "雨声里缓慢浮现的谜题"),
+    track: "Gnossienne No. 2", artist: "Erik Satie · La Pianista", audio: "/audio/watercolor/satie-gnossienne-2.ogg", bpm: 72, duration: 101.579,
     environment: "rainy-arcade", accent: "#5689a2", accentNumber: 0x5689a2, cover: "/portfolio/rain-arcade-hero.png",
     mechanic: t("Explore · Choose · Reflect", "探索 · 选择 · 回望"),
     narrative: [
@@ -60,7 +62,8 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "iwbtz", order: 3, chapter: "movement-iii", difficulty: "nightmare",
     title: t("I Wanna Be the Zomboy", "I Wanna Be the Zomboy"), shortTitle: t("IWBTZ", "IWBTZ"),
     description: t("A hardcore platformer about misunderstanding, persistence, and accepting an imperfect self.", "一款关于误解、坚持与接纳不完美自我的硬核平台游戏。"),
-    track: "市松寿ゞ謡 - クシコスポスト", artist: "市松寿ゞ謡", audio: "/audio/candidates/ichimatsu.mp3", bpm: 144, duration: 128.47,
+    mood: t("Bright, precise, and always pressing forward", "明亮、精准、不断向前"),
+    track: "Invention No. 8 in F Major, BWV 779", artist: "J. S. Bach · Public-domain performance", audio: "/audio/watercolor/bach-invention-8.ogg", bpm: 152, duration: 61.78,
     environment: "iwbtz", accent: "#cf7445", accentNumber: 0xcf7445, cover: "/portfolio/iwbtz-menu.png",
     mechanic: t("Precision Platforming · Escalating Bosses", "精密跳跃 · 递进式 Boss"),
     narrative: [
@@ -81,7 +84,8 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "auto-tune", order: 4, chapter: "movement-iv", difficulty: "casual",
     title: t("Auto Tune", "Auto Tune"), shortTitle: t("Auto Tune", "Auto Tune"),
     description: t("A browser extension that brings multilingual posting across three platforms into one compact control panel.", "一款把三平台多语言发帖操作收进小型控制面板的浏览器扩展。"),
-    track: "Office Music - Csikos Post", artist: "Office Music", audio: "/audio/candidates/office-music.mp3", bpm: 112, duration: 113.371,
+    mood: t("A nimble studio rhythm, light on its feet", "轻快运转的工作室节奏"),
+    track: "Scenes from Childhood · V. Happiness", artist: "Robert Schumann · Musopen performance", audio: "/audio/watercolor/schumann-happiness.ogg", bpm: 104, duration: 89.94,
     environment: "auto-tune", accent: "#c69a32", accentNumber: 0xc69a32, cover: "/portfolio/auto-reply-control.webp",
     mechanic: t("Draft · Detect · Post", "草稿 · 识别 · 发布"),
     narrative: [
@@ -102,7 +106,8 @@ export const GAME_LEVELS: GameLevel[] = [
     id: "study-assistant", order: 5, chapter: "movement-iv", difficulty: "expert",
     title: t("Literature Research Assistant", "文献查阅辅助工具"), shortTitle: t("Literature Research Assistant", "文献查阅辅助工具"),
     description: t("Keep translation, highlighting, notes, mind maps, and focus timing beside the source instead of scattering them across separate tools.", "把翻译、高亮、笔记、思维导图与专注计时留在原文旁边，不再分散到多个工具。"),
-    track: "Hermann Necke - Csikos Post", artist: "Hermann Necke", audio: "/audio/candidates/hermann-necke.mp3", bpm: 168, duration: 178.625,
+    mood: t("A slow afternoon settling into concentration", "安静沉入阅读的午后"),
+    track: "Scenes from Childhood · XII. Child Falling Asleep", artist: "Robert Schumann · Musopen performance", audio: "/audio/watercolor/schumann-child-falling-asleep.ogg", bpm: 68, duration: 121.469,
     environment: "study-assistant", accent: "#648b59", accentNumber: 0x648b59, cover: "/portfolio/web-study-workspace.webp",
     mechanic: t("Read · Connect · Retain", "阅读 · 连接 · 留存"),
     narrative: [

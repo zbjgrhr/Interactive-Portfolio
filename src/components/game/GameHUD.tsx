@@ -58,6 +58,9 @@ export function GameHUD() {
       <div className="game-dream-overlay" aria-hidden>
         <i className="game-dream-glow game-dream-glow-left" />
         <i className="game-dream-glow game-dream-glow-right" />
+        <i className="game-paper-fragment game-paper-fragment-one" />
+        <i className="game-paper-fragment game-paper-fragment-two" />
+        <i className="game-paper-fragment game-paper-fragment-three" />
       </div>
       <div
         className={`game-hud game-hud-${level.difficulty}`}
@@ -69,7 +72,8 @@ export function GameHUD() {
           <span>STAGE 0{level.order}</span>
           <div>
             <strong>{localize(level.shortTitle, locale)}</strong>
-            <small>{localize(DIFFICULTY_LABELS[level.difficulty], locale)} · {level.bpm} BPM</small>
+            <small className="hud-track">♪ {level.track}</small>
+            <small className="hud-difficulty">{localize(DIFFICULTY_LABELS[level.difficulty], locale)} · {level.bpm} BPM</small>
           </div>
         </div>
 
@@ -140,6 +144,23 @@ export function GameHUD() {
 
         <div className="hud-progress" aria-label={`${Math.round(levelProgress * 100)}%`}>
           <i style={{ width: `${Math.max(0, Math.min(100, levelProgress * 100))}%` }} />
+          {[
+            [0.08, locale === "en" ? "Depart" : "启程"],
+            [0.34, locale === "en" ? "Unfold" : "展开"],
+            [0.66, locale === "en" ? "Reflect" : "回望"],
+            [0.94, locale === "en" ? "Arrive" : "抵达"],
+          ].map(([point, label]) => (
+            <span
+              key={String(label)}
+              className="hud-progress-stop"
+              data-active={levelProgress >= Number(point)}
+              style={{ left: `${Number(point) * 100}%` }}
+            >
+              <b />
+              <small>{label}</small>
+            </span>
+          ))}
+          <strong>{Math.round(levelProgress * 100)}%</strong>
         </div>
       </div>
 
@@ -153,7 +174,11 @@ export function GameHUD() {
           <div>
             <p>{locale === "en" ? "LOADING" : "正在加载"} STAGE 0{level.order}</p>
             <h2>{localize(level.title, locale)}</h2>
-            <span>{locale === "en" ? "Listening for the performance’s real piano attacks…" : "正在识别演奏中的真实钢琴起音…"}</span>
+            <div className="loading-track">
+              <strong>♪ {level.track}</strong>
+              <small>{level.artist}</small>
+            </div>
+            <span>{locale === "en" ? "Turning the recording into a playable memory…" : "正在把乐曲展开成一段可演奏的记忆…"}</span>
             <i><b style={{ width: `${Math.round(loadingProgress * 100)}%` }} /></i>
             <small>{Math.round(loadingProgress * 100)}%</small>
           </div>
@@ -185,6 +210,7 @@ function PauseOverlay() {
     <div className="overlay-panel game-pause-panel" role="dialog" aria-modal>
       <p>STAGE 0{level.order} · {localize(DIFFICULTY_LABELS[level.difficulty], locale)}</p>
       <h2>{locale === "en" ? "Performance Paused" : "演奏已暂停"}</h2>
+      <small className="pause-track">♪ {level.track}<br />{level.artist}</small>
       <button
         type="button"
         className="btn-primary"

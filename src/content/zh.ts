@@ -39,7 +39,7 @@ export const zh = {
     title: "制作名单",
     body: [
       "共鸣档案 · 张铧心互动作品集",
-      "五个 Csikos Post 录音版本，分别塑造五种关卡风格",
+      "五首公共领域钢琴曲，分别塑造五段水彩记忆",
       "技术：Next.js、Phaser 3、Web Audio",
     ],
   },

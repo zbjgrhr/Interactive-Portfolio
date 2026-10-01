@@ -1,16 +1,11 @@
 "use client";
 
 import { useUiStore } from "@/store/uiStore";
+import { GAME_LEVELS } from "@/data/gameLevels";
 
 const KEYS = ["D", "F", "SPACE", "J", "K"];
 
-const TRACKS = [
-  { title: "Forest of Piano - Csikos Post (Arr. for Piano)", creator: "Forest of Piano" },
-  { title: "V.A. - Csikos Post - 네케", creator: "V.A." },
-  { title: "市松寿ゞ謡 - クシコスポスト", creator: "市松寿ゞ謡" },
-  { title: "Office Music - Csikos Post", creator: "Office Music" },
-  { title: "Hermann Necke - Csikos Post", creator: "Hermann Necke" },
-];
+const TRACKS = GAME_LEVELS.map(({ track, artist }) => ({ title: track, creator: artist }));
 
 export function ModalLayers() {
   const showHowToPlay = useUiStore((state) => state.showHowToPlay);
@@ -86,7 +81,7 @@ export function ModalLayers() {
         >
           <ModalClose onClick={close} label={locale === "en" ? "Close Credits" : "关闭制作名单"} />
           <p className="game-modal-kicker">MUSIC & MAKING / 音乐与制作</p>
-          <h2 id="credits-title">{locale === "en" ? "Five recordings. Five level personalities." : "五个录音版本，五种关卡性格。"}</h2>
+          <h2 id="credits-title">{locale === "en" ? "Five pieces. Five watercolor memories." : "五首乐曲，五段水彩记忆。"}</h2>
           <p className="game-modal-lead">
             {locale === "en" ? "Resonance Archive is an interactive portfolio created by Huaxin Zhang." : "《共鸣档案》是张铧心创作的互动作品集。"}
           </p>
@@ -101,6 +96,11 @@ export function ModalLayers() {
               </li>
             ))}
           </ol>
+          <p className="credit-license">
+            {locale === "en"
+              ? "All five recordings are sourced from public-domain or CC0 collections. Source details are documented with the project."
+              : "五首录音均来自公共领域或 CC0 曲库，详细出处已随项目记录。"}
+          </p>
           <p className="credit-tech">Next.js · Phaser 3 · Web Audio</p>
           <button type="button" className="game-modal-action" onClick={close}>
             {locale === "en" ? "Back to Level" : "返回关卡"}

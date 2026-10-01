@@ -125,7 +125,7 @@ export const en: ContentShape = {
     title: "Credits",
     body: [
       "Resonance Archive · An Interactive Portfolio by Huaxin Zhang",
-      "Five recordings of Csikós Post, each shaping a different level style",
+      "Five public-domain piano pieces shape five distinct watercolor memories",
       "Built with Next.js, Phaser 3, and Web Audio",
     ],
   },

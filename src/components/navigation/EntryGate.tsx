@@ -118,6 +118,7 @@ export function EntryGate() {
                   <small>{difficulty} · {level.bpm} BPM</small>
                   <strong>{localize(level.title, locale)}</strong>
                   <span>{level.track}</span>
+                  <em>{localize(level.mood, locale)}</em>
                 </span>
                 <span className="level-stars" aria-label={`${DIFFICULTY_STARS[level.difficulty]} / 5`}>
                   {Array.from({ length: 5 }, (_, index) => (
@@ -145,6 +146,7 @@ export function EntryGate() {
           <div className="level-preview-copy">
             <p>{localize(selected.mechanic, locale)}</p>
             <h2>{localize(selected.title, locale)}</h2>
+            <p className="level-preview-mood">♪ {localize(selected.mood, locale)}</p>
             <p className="level-preview-description">{localize(selected.description, locale)}</p>
             <dl>
               <div><dt>{locale === "en" ? "Music" : "音乐"}</dt><dd>{selected.track}</dd></div>

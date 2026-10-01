@@ -113,14 +113,15 @@ export class MemoryScroll {
     for (let i = 0; i < n; i++) {
       this.scrollRoot.add(
         this.scene.add
-          .rectangle(
+          .ellipse(
             Phaser.Math.Between(20, GAME_WIDTH - 20),
             Phaser.Math.Between(20, PIANO_TOP - 80),
-            2,
-            2,
+            Phaser.Math.Between(3, 8),
+            Phaser.Math.Between(7, 16),
             COLORS.moonlight,
-            Phaser.Math.FloatBetween(0.2, 0.65),
+            Phaser.Math.FloatBetween(0.12, 0.42),
           )
+          .setRotation(Phaser.Math.FloatBetween(-0.9, 0.9))
           .setScrollFactor(0),
       );
     }
@@ -311,7 +312,13 @@ export class MemoryScroll {
       level.accentNumber,
       0.25,
     );
-    root.add([frame, rail, step, eyebrow, title, body, divider]);
+    const tape = this.scene.add
+      .rectangle(GAME_WIDTH / 2, panelTop + 3, 86, 17, 0xe8bf65, 0.7)
+      .setRotation(-0.035);
+    const stamp = this.scene.add
+      .circle(GAME_WIDTH - 92, panelTop + 28, 17, level.accentNumber, 0.08)
+      .setStrokeStyle(2, level.accentNumber, 0.45);
+    root.add([frame, tape, stamp, rail, step, eyebrow, title, body, divider]);
 
     const key = this.ensureImageTexture(panel.image);
     if (key && this.scene.textures.exists(key)) {

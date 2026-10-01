@@ -10,7 +10,7 @@ interface ActiveNote {
   trail?: Phaser.GameObjects.Rectangle;
 }
 
-/** Notes approach the hit line as light trails / ribbons mapped to pitch lanes. */
+/** Notes approach the hit line as drifting watercolor leaves mapped to pitch lanes. */
 export class NoteHighway {
   private scene: Phaser.Scene;
   private stage: PianoStage;
@@ -75,16 +75,25 @@ export class NoteHighway {
             ? COLORS.cyan
             : COLORS.keyLit;
 
-    const w = action === "hold" ? 18 : action === "chord" ? 22 : 12;
-    const h = action === "hold" ? 28 : 10;
+    const w = action === "hold" ? 19 : action === "chord" ? 24 : 15;
+    const h = action === "hold" ? 38 : action === "chord" ? 18 : 22;
+    const rotation = action === "leap" ? 0.72 : action === "hold" ? 0 : -0.48;
 
     const halo = this.scene.add
-      .ellipse(0, 0, w * 2.2, Math.max(20, h * 1.8), color, 0.12)
-      .setStrokeStyle(1, color, 0.65);
-    const core = this.scene.add
-      .rectangle(0, 0, w, h, color, 0.98)
-      .setStrokeStyle(2, COLORS.keyWhite, 0.55);
-    const gfx = this.scene.add.container(x, 40, [halo, core]).setDepth(15);
+      .ellipse(0, 0, w * 2.5, Math.max(30, h * 1.8), color, 0.1)
+      .setStrokeStyle(1, COLORS.keyWhite, 0.28)
+      .setRotation(rotation);
+    const wash = this.scene.add
+      .ellipse(-2, 1, w * 1.15, h * 0.95, color, 0.52)
+      .setRotation(rotation + 0.14);
+    const leaf = this.scene.add
+      .ellipse(2, -1, w, h, color, 0.92)
+      .setStrokeStyle(2, COLORS.keyWhite, 0.58)
+      .setRotation(rotation);
+    const vein = this.scene.add
+      .rectangle(0, 0, 1.4, h * 0.68, COLORS.keyWhite, 0.58)
+      .setRotation(rotation);
+    const gfx = this.scene.add.container(x, 40, [halo, wash, leaf, vein]).setDepth(15);
     if (!this.reducedMotion) {
       this.scene.tweens.add({
         targets: halo,
@@ -100,7 +109,7 @@ export class NoteHighway {
     let trail: Phaser.GameObjects.Rectangle | undefined;
     if (!this.reducedMotion) {
       trail = this.scene.add
-        .rectangle(x, 40, 8, 20, color, 0.28)
+        .rectangle(x, 40, action === "hold" ? 12 : 7, 20, color, action === "hold" ? 0.32 : 0.18)
         .setDepth(14);
     }
 
@@ -131,7 +140,10 @@ export class NoteHighway {
     if (!this.reducedMotion && (judgment === "perfect" || combo >= 15)) {
       const sparks = Array.from({ length: combo >= 15 ? 10 : 6 }, (_, index) => {
         const angle = (Math.PI * 2 * index) / (combo >= 15 ? 10 : 6);
-        const spark = this.scene.add.rectangle(x, HIT_LINE_Y, 4, 12, color, 0.9).setDepth(22);
+        const spark = this.scene.add
+          .ellipse(x, HIT_LINE_Y, 7, 14, color, 0.88)
+          .setRotation(angle + 0.45)
+          .setDepth(22);
         this.scene.tweens.add({
           targets: spark,
           x: x + Math.cos(angle) * 54,
