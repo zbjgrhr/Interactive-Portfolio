@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { LocaleBootstrap } from "@/components/accessibility/LocaleBootstrap";
 import "./globals.css";
 import "./game-v2.css";
+import "./explore-watercolor.css";
 
 export const metadata: Metadata = {
   title: "Huaxin Zhang — Game Designer & AI Product Builder",
